@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/sigin-info.css"/>
+    <title>签到天数显示</title>
+</head>
+<body onload="loaded()">
+<!--公共头部-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">签到</h2>
+        <a href="" class="btn btn-shared"></a>
+    </div>
+</header>
+
+<!-- 页面内容主体 -->
+<section>
+    <!-- 触屏滑动 滚动区域 -->
+    <div id="wg-all-wrapper">
+        <div id="wg-all-scroller">
+            <div class="info-panel">
+                <h2 class="txt-center title">已成功获得<span><em>1</em>微币</span></h2>
+
+                <p class="txt-center">连续签到10天可<span>领取10元现金券</span></p>
+            </div>
+            <!--info-panel-->
+            <div class="info-btn-list">
+                <div class="MR275 MB24 p-left old infoBox">
+                    <span class="old-sign"></span>
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第一天</p>
+                </div>
+                <!--infoBox-->
+                <div class="MR275 MB24 p-left active infoBox">
+                    <span class="old-sign"></span>
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第二天</p>
+                </div>
+                <!--infoBox-->
+                <div class="MR275 MB24 p-left infoBox">
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第三天</p>
+                </div>
+                <!--infoBox-->
+                <div class="MR275 MB24 p-left infoBox">
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第四天</p>
+                </div>
+                <!--infoBox-->
+                <div class="MB24 p-left infoBox">
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第五天</p>
+                </div>
+                <!--infoBox-->
+                <!--上5列-->
+
+                <div class="MR275 MB24 p-left infoBox">
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第六天</p>
+                </div>
+                <!--infoBox-->
+                <div class="MR275 MB24 p-left infoBox">
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第七天</p>
+                </div>
+                <!--infoBox-->
+                <div class="MR275 MB24 p-left infoBox">
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第八天</p>
+                </div>
+                <!--infoBox-->
+                <div class="MR275 MB24 p-left infoBox">
+                    <span class="click-panel"><i class=""></i><p class="txt-center">1微币</p></span>
+                    <p class="day-txt txt-center">第九天</p>
+                </div>
+                <!--infoBox-->
+                <div class="MB24 p-left infoBox">
+                    <span class="click-panel" style="padding: 0.1rem"><img src="img/red-package-10.png" class="img-responsive"/></span>
+                    <p class="day-txt txt-center">第十天</p>
+                </div>
+                <!--infoBox-->
+            </div>
+            <!--info-btn-list-->
+            <div class="info-panel">
+                <h2 class="txt-center title">本月累计签到<span><em>2</em>天</span></h2>
+
+                <p class="txt-center">本月累计签到签到30天送<span>100微币</span></p>
+            </div>
+            <!--info-panel-->
+            <div class="signIn-progressBar">
+                <span class="progres-bar-gray progress-bar">
+                    <span class="label L1">1</span>
+                    <span class="label L33">10</span>
+                    <span class="label L66">20</span>
+                    <span class="label L100">30</span>
+                    <span class="active-progress-bar"></span>
+                </span>
+            </div>
+            <!--signIn-progressBar-->
+            <div class="get-more-task">
+                 <a href="" class="do-more">去做任务赚更多微币</a>
+            </div>
+            <!--get-more-task-->
+
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/size.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/TouchScroll.js"></script>
+<script type="text/javascript">
+    //屏幕滑动事件
+    var myScroll = '';
+    function loaded() {
+        myScroll = new IScroll("#wg-all-wrapper", {
+            scrollbars: true,
+            mouseWheel: false,
+            interactiveScrollbars: false,
+            shrinkScrollbars: 'scale',
+            fadeScrollbars: true
+        });
+    }
+
+    //签到天数进度条样式算方法
+    window.addEventListener('DOMContentLoaded', calc(), false);
+    function calc() {
+        //已签到的天数 getDay
+        var getDay = 20, sumDay = 30, indx = 0,result=0;
+        result = (getDay / sumDay) * 100;
+        var progressTimer = setInterval(function () {
+            if (indx <= result) {
+                 if(indx==1){
+                     $(".L1").addClass("selected");
+                 }
+                if (result >= 33.33333333333333) {
+                    setTimeout(function(){ $(".L33").addClass("selected"); },500);
+                }
+                if(result >= 66.66666666666666){
+                    setTimeout(function(){ $(".L66").addClass("selected"); },1200);
+                }
+                if (result >= 100) {
+                    setTimeout(function(){ $(".L100").addClass("selected"); },2000);
+                }
+                ++indx;
+                $(".active-progress-bar").css('width', indx + '%');
+            }else{
+                clearInterval(progressTimer);
+            }
+        }, 20)
+    }
+
+</script>
+</body>
+</html>

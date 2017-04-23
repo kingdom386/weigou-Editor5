@@ -1,0 +1,199 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+html {
+    font-family: 'SimHei',Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    background: transparent;
+}
+
+/*网页开发用到的样式*/
+.positionRelative{
+    position: relative;
+}
+
+.positionAbsolute{
+    position: absolute;
+}
+
+.positionFixed{
+    position: fixed;
+}
+
+em, i {
+    font-style: normal !important;
+}
+
+img {
+    -webkit-touch-callout: none;
+    -moz-touch-callout: none;
+}
+
+a, img {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.p-left {
+    float: left;
+}
+
+.p-right {
+    float: right;
+}
+
+.marginRInit {
+    margin-right: 0 !important;
+}
+
+.marginBInit {
+    margin-bottom: 0 !important;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.borderNone {
+    border: 0 !important;
+}
+
+.borderBInit {
+    border-bottom: 0 !important;
+}
+
+.borderRInit {
+    border-right: 0 !important;
+}
+
+.marginB20 {
+    margin-bottom: 0.2rem !important;
+}
+
+/*加载状态*/
+#loading-more {
+    width: auto;
+    height: 0.8rem;
+    font-size: 0.24rem;
+    color: #ccc;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+#loading-more:before {
+    content: '————';
+    color: #ccc;
+}
+
+#loading-more:after {
+    content: '————';
+    color: #ccc;
+}
+
+/*图片滑动 游标*/
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: .8
+}
+
+.swiper-pagination-bullet-active {
+    opacity: .8;
+    background: #ffa632
+}
+
+.layer-msg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:9999999999999;/*至高无上境界 0_0*/
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}

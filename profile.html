@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/clear.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/profile.css" media="screen">
+    <title>个人中心</title>
+    <style type="text/css">
+        #scroll-wrapper {
+            bottom: 0.98rem !important;
+        }
+    </style>
+</head>
+<body onload="publicScroll()">
+<!--公共头部  微信头部不要加 app头部要加样式需要根据实际情况进行修改且样式均为统一-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">个人中心</h2>
+        <a href="" class="btn btn-shared"></a>
+    </div>
+</header>
+
+<!--整体内容滑动-->
+<section>
+    <div id="scroll-wrapper">
+        <div id="scroll-container">
+            <div class="profile-header-pane marginB20">
+                <a href="">
+                    <div class="profile-protrait"><span class="portrait-items"><img lazyImg="img/tx.jpg"
+                                                                                    class="img-responsive"/></span>
+                    </div>
+                    <!--情况显示-->
+                    <!--<p class="portrait-txt txt-center">请点击登录</p>-->
+                </a>
+                <div class="profile-pane-btn">
+                    <a href="" class="p-left"><span class="footprint"><i class="foot-icon"></i>我的足迹</span></a>
+                    <a href="" class="p-right"><span class="footprint"><i class="coll-icon"></i>我的收藏</span></a>
+                </div>
+                <!--profile-pane-btn-->
+            </div>
+            <!--profile-header-pane-->
+
+            <div class="profile-myorder marginB20">
+                <div class="profile-order-label">
+                    <a href=""><span class="order-label p-left">我的订单</span><span class="order-msg p-right">查看全部订单 <i
+                            class="icon-angle-right"></i></span></a>
+                </div>
+                <div class="profile-nav">
+                    <a href="javascript:void(0);" class="pro-nav-items p-left"><span
+                            class="pro-nav-icon need-pay"></span>
+                        <p>待付款</p></a>
+                    <a href="javascript:void(0);" class="pro-nav-items p-left"><span
+                            class="pro-nav-icon need-deliver"></span>
+                        <p>待发货</p></a>
+                    <a href="javascript:void(0);" class="pro-nav-items p-left"><span
+                            class="pro-nav-icon need-receive"></span>
+                        <p>待收货</p></a>
+                    <a href="javascript:void(0);" class="pro-nav-items p-left"><span
+                            class="pro-nav-icon need-eval"></span>
+                        <p>待评价</p></a>
+                    <a href="javascript:void(0);" class="pro-nav-items p-left"><span class="pro-nav-icon need-m"></span>
+                        <p>退款</p></a>
+                </div>
+                <!--profile-nav-->
+            </div>
+            <!--profile-myorder-->
+
+            <div class="profile-other-info marginB20">
+                <div class="profile-other-info-items">
+                    <span class="other-info p-left">我的微币</span>
+                    <span class="other-info-arrow p-right"><em>58448544</em>个 <i
+                            class="icon-angle-right p-right"></i></span>
+                </div>
+                <!--profile-other-info-items-->
+                <div class="profile-other-info-items">
+                    <span class="other-info p-left">现金券/红包</span>
+                    <span class="other-info-arrow p-right"><em>525</em>个 <i class="icon-angle-right p-right"></i></span>
+                </div>
+                <!--profile-other-info-items-->
+                <div class="profile-other-info-items borderBInit">
+                    <span class="other-info p-left">客服中心</span>
+                    <span class="other-info-arrow p-right"><i class="icon-angle-right p-right"></i></span>
+                </div>
+                <!--profile-other-info-items-->
+            </div>
+            <!--profile-other-info-->
+
+            <!--九宫格-->
+            <div class="jiugongge marginB20">
+                <a href="" class="jiu-btn p-left"><span class="jiu-btn-icon get-money"></span>
+                    <p class="jiu-btn-label txt-center">签到领钱</p></a>
+                <a href="" class="jiu-btn p-left"><span class="jiu-btn-icon shake-body"></span>
+                    <p class="jiu-btn-label txt-center">摇一摇</p></a>
+                <a href="" class="jiu-btn p-left"><span class="jiu-btn-icon lucky-draw"></span>
+                    <p class="jiu-btn-label txt-center">幸运抽奖</p></a>
+                <a href="" class="jiu-btn p-left"><span class="jiu-btn-icon daily-task"></span>
+                    <p class="jiu-btn-label txt-center">今日任务</p></a>
+                <a href="" class="jiu-btn p-left"><span class="jiu-btn-icon agent"></span>
+                    <p class="jiu-btn-label txt-center">升级代理</p></a>
+                <a href="" class="jiu-btn p-left"><span class="jiu-btn-icon purchase"></span>
+                    <p class="jiu-btn-label txt-center">低价进货</p></a>
+                <a href="" class="jiu-btn p-left"><span class="jiu-btn-icon settled"></span>
+                    <p class="jiu-btn-label txt-center">入驻进货</p></a>
+                <a href="" class="jiu-btn p-left"><span class="jiu-btn-icon join"></span>
+                    <p class="jiu-btn-label txt-center">线下加盟</p></a>
+            </div>
+            <!--jiugongge-->
+            <div class="setting marginB20">
+                <span class="p-left setting-label">设置</span>
+                <span class="p-right icon-angle-right setting-arrow"></span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--页面公共页底部分-->
+<footer class="public-footer">
+    <div class="footer-content">
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-home-bl.png" class="img-responsive" /></span><p class="label-txt txt-center">首页</p></a>
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-category.png" class="img-responsive" /></span><p class="label-txt txt-center">分类</p></a>
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-main.png" class="img-responsive" /></span><p class="label-txt txt-center">点我赚钱</p></a>
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-cart.png" class="img-responsive" /></span><p class="label-txt txt-center">购物车</p></a>
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-profile.png" class="img-responsive" /></span><p class="label-txt txt-center">个人中心</p></a>
+    </div>
+</footer>
+<!--public-footer-->
+
+<script src="js/size.js" type="text/javascript"></script>
+<script src="js/zepto.min.js" type="text/javascript"></script>
+<script src="js/TouchScroll.js" type="text/javascript"></script>
+<script src="js/LazyImgLoad.js" type="text/javascript"></script>
+
+</body>
+</html>

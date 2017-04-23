@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/wb.css" media="screen">
+    <title>微币商城</title>
+</head>
+<body onload="EXload()">
+<!--公共头部  微信头部不要加 app头部要加样式需要根据实际情况进行修改且样式均为统一-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">微币商城</h2>
+        <a href="" class="btn btn-shared"></a>
+    </div>
+</header>
+<!--内容包裹层-->
+<section>
+    <div id="scroll-wrapper">
+        <div id="scroll-container">
+            <!--微币商城背景图-->
+            <div class="wb-img">
+                <img src="img/wb-bgImg.jpg" class="img-responsive" alt="微币商城背景图"/>
+            </div>
+            <!--微币商城入口-->
+            <div class="wb-enter">
+                <a href="" class="enter-btn">
+                    <span class="enter-pane enter-pane-left"><i class="enter-icon icon-RMB" style="left: 0.2rem;"></i>微币：25</span>
+                </a>
+                <a href="" class="enter-btn">
+                    <span class="enter-pane enter-pane-mid"><i class="enter-icon icon-EX "></i>兑换记录</span>
+                </a>
+
+                <a href="" class="enter-btn">
+                    <span class="enter-pane enter-pane-right"><i class="enter-icon icon-WB"></i>赚微币</span>
+                </a>
+            </div>
+            <!--wb-enter-->
+            <!--大家都在兑-->
+            <div class="wb-ex">
+                <span class="fire-label"><i class="wb-ex-icon"></i>大家都在兑</span>
+            </div>
+            <!--wb-ex-->
+            <!--兑换列表-->
+            <div class="wb-ex-list">
+                <div class="wb-ex-items">
+                 <span class="items-img">
+                    <img src="img/222x222.jpg" lazyImg="img/222x222.jpg" class="img-responsive"/>
+                 </span>
+                    <!--items-img-->
+                    <div class="items-pane">
+                        <h3 class="items-title">微币特权专享-10元券</h3>
+                        <p class="items-label">平台全场通用券</p>
+                        <span class="items-info"><em>188888</em>微币</span>
+                        <a href="" class="getBtn">去兑换<i class="icon-angle-right"></i></a>
+                    </div>
+                    <!--items-pane-->
+
+                </div>
+                <!--wb-ex-items-->
+            </div>
+            <!--wb-ex-list-->
+
+
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/size.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/TouchScroll.js"></script>
+<script type="text/javascript">
+    var Myscroll = '';
+    function EXload() {
+        Myscroll = new IScroll('#scroll-wrapper', {
+            click: true,
+            touchend: true,
+            preventDefaultException: {tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A|SPAN)$/},
+            deceleration: 0.0006,
+            bindToWrapper: true,
+            scrollbars: true,
+            fadeScrollbars: true,
+            shrinkScrollbars: 'scale'
+        });
+
+        //执行图片懒加载
+        ImgLazyLoad();
+
+        //绑定上下滑动事件
+        Myscroll.on('scrollEnd', function () {
+            //滑屏结束执行图片懒加载
+            ImgLazyLoad();
+        });
+
+        //图片懒加载处理
+        function ImgLazyLoad() {
+            $("img").each(function (i, t) {
+                //含有懒加载属性就执行懒加载
+                if ($(t).attr('lazyImg')) {
+                    //标签含有需要懒加载的图片 执行图片懒加载
+                    if ($(t).offset().top <= (Myscroll.wrapperHeight - Myscroll.y)) {
+                        $(t).attr('src', $(t).attr('lazyImg'));
+                    }
+                }
+            });
+        }
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+@charset "utf-8";
+body {
+    background: #fff;
+}
+
+#scroll-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0.88rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#scroll-container {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/*摇一摇顶部样式*/
+.s-k-top {
+    padding: 0 0.2rem;
+    display: block;
+    width: 100%;
+    height: 1.1rem;
+    background: url('../img/s-k-top-bg.jpg') center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.s-k-label {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 1.1rem;
+    font-size: 0.36rem;
+    line-height: 0.94rem;
+    color: #fff;
+}
+
+.s-k-label-left {
+    padding-left: 0.78rem;
+}
+
+.s-k-label-right {
+    padding-right: 0.48rem;
+}
+
+.s-k-left-badge {
+    position: absolute;
+    left: 0;
+    top: 0.18rem;
+    display: block;
+    width: 0.62rem;
+    height: 0.62rem;
+    background: url("../img/s-k-badge.png") center center no-repeat;
+    background-size: contain;
+}
+
+.s-k-right-badge {
+    position: absolute;
+    right: 0;
+    top: 0.3rem;
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url("../img/warning.png") center center no-repeat;
+    background-size: contain;
+}
+
+/* 日历样式 */
+.s-k-calendar {
+    position: relative;
+    width: auto;
+    height: 1.4rem;
+    overflow: hidden;
+    padding: 0.2rem 0;
+}
+
+.s-k-calendar-txt {
+    position: absolute;
+    z-index: 9999;
+    background: #fff;
+    left: 0;
+    top: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+    border-right: 1px solid #ccc;
+    -webkit-box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, .2);
+    box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+.s-k-month {
+    font-size: 0.3rem;
+    line-height: 1.5;
+    margin-bottom: 0.1rem;
+}
+
+.s-k-labels {
+    display: block;
+    margin: 0 auto;
+    width: 0.88rem;
+    height: 0.36rem;
+    text-align: center;
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    color: #fff;
+    background: #fec304;
+    -webkit-border-radius: 0.36rem;
+    -moz-border-radius: 0.36rem;
+    border-radius: 0.36rem;
+}
+
+/*日历内容样式*/
+.calendar-panel {
+    width: auto;
+    height: 1rem;
+    overflow: hidden;
+}
+
+.calendar-panel .swiper-slide p {
+    position: relative;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    color: #888;
+}
+
+.txt-333 {
+    color: #333 !important;
+}
+
+.calendar-panel .swiper-slide p .s-k-c-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.22rem;
+    margin-left: -0.22rem;
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url("../img/shake-gift.png") center center no-repeat;
+    background-size: contain;
+}
+
+.calendar-panel .swiper-slide p .s-k-OK {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.14rem;
+    display: block;
+    width: 0.28rem;
+    height: 0.24rem;
+    background: url("../img/i-ok.png") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+/*要红包样式*/
+.s-k-animation {
+    position: relative;
+    width: 100%;
+    height: 7.45rem;
+    background: url('../img/s-k-01.jpg') #fda506 center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.s-k-counts {
+    display: block;
+    margin-top: 0.24rem;
+    width: auto;
+    height: auto;
+    font-size: 0.36rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.s-k-counts em {
+    color: #f84034;
+}
+
+.s-k-02 {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 50%;
+    z-index: 99;
+    width: auto;
+    height: 5.86rem;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/*执行摇一摇动画*/
+.active-s-k {
+    -webkit-transform-origin: bottom center;
+    -moz-transform-origin: bottom center;
+    -webkit-animation: Demo007 1.2s 0s ease 1 forwards;
+    -moz-animation: Demo007 1.2s 0s ease 1 forwards;
+    animation: Demo007 1.2s 0s ease 1 forwards;
+}
+
+@-webkit-keyframes Demo007 {
+    5%, 25%, 45%, 65%, 85% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    15%, 35%, 55%, 75% {
+        -webkit-transform: rotate(-10deg);
+        -mzo-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+
+.s-k-hand {
+    display: block;
+    width: 4rem;
+    height: 5.86rem;
+    background: url("../img/s-k-02.png") center center no-repeat;
+    background-size: contain;
+}
+
+.s-k-03 {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.54rem;
+    background: url("../img/s-k-03.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*其他商城路径*/
+.s-k-other {
+    padding: 0 0.2rem;
+    margin-top: 0.23rem;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.s-k-other-way {
+    position: relative;
+    display: block;
+    padding: 0.26rem 0.66rem 0.26rem 1.46rem;
+    width: auto;
+    height: 1.6rem;
+    background: #fffbe5;
+    margin-bottom: 0.2rem;
+}
+
+.s-k-icon {
+    position: absolute;
+    top: 0.26rem;
+    left: 0.26rem;
+    display: block;
+    width: 1.08rem;
+    height: 1.08rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #ccc;
+}
+
+.s-k-other-way h3 {
+    font-size: 0.36rem;
+    line-height: 1;
+    margin-top: 0.16rem;
+    color: #fda706;
+}
+
+.s-k-other-way p {
+    margin-top: 0.16rem;
+    font-size: 0.26rem;
+    color: #fdbb05;
+}
+
+.s-k-other-way .arrow-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0.26rem;
+    width: 0.66rem;
+    height: 1.08rem;
+    font-size: 0.56rem;
+    color: #fdbb05;
+    line-height: 1.08rem;
+}
+
+/*摇一摇规则样式*/
+.msg-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.14rem;
+    margin-top: -3.6rem;
+    width: 6.28rem;
+    height: 7.2rem;
+    background: #fff;
+    -webkit-border-radius: 0.08rem;
+    -moz-border-radius: 0.07rem;
+    border-radius: 0.08rem;
+}
+
+.silk-orange {
+    display: block;
+    width: 3.76rem;
+    height: 0.58rem;
+    font-size: 0.36rem;
+    line-height: 0.58rem;
+    margin: 0.52rem auto 0;
+    background: url("../img/silk-orange.png") center center no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+
+/*摇一摇中奖样式*/
+/*限时抢购样式*/
+.s-k-FlashSale-items {
+    padding: 0.06rem 0 0.1rem;
+    width: auto;
+    height: 3.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.FalshSale-item {
+    display: block;
+    margin: 0 auto;
+    width: 3.34rem;
+    height: 3.34rem;
+    overflow: hidden;
+}
+
+.f-items-name {
+    width: auto;
+    height: 0.96rem;
+    font-size: 0.26rem;
+    line-height: 0.96rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*限时抢购总体信息*/
+.f-items-info {
+    font-size: 0.28rem;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.f-items-price {
+    color: #fda506;
+}
+
+.f-items-price em {
+    font-size: 0.4rem;
+}
+
+.f-items-rest {
+    font-size: 0.26rem;
+    color: #999;
+}
+
+.f-items-btn {
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.96rem;
+    font-size: 0.34rem;
+    line-height: 0.96rem;
+    text-align: center;
+    color: #fff;
+    background: #fda506;
+}
+
+/*连续7天摇一摇获得微币样式*/
+.Seven-day-sign{
+    display: none;
+    position: absolute;
+    padding: 0 0.2rem;
+    left: 50%;
+    top: 50%;
+    width: 5.6rem;
+    height: 5.58rem;
+    margin-left: -2.8rem;
+    margin-top: -2.79rem;
+    background: #fff;
+    -webkit-border-radius: 0.08rem;
+    -moz-border-radius: 0.08rem;
+    border-radius: 0.08rem;
+    overflow: hidden;
+}
+
+.seven-day-txt{
+    font-size: 0.32rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 0.22rem;
+}
+
+.f-seven-day{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 5.2rem;
+    height: 1.02rem;
+    font-size: 0.4rem;
+    line-height: 1.02rem;
+    color: #fda506;
+    border-top: 1px solid #ddd;
+}
+
+/*邀请好友*/
+.invite-friends{
+    width:auto;
+    height: 4rem;
+}
+
+.invite-rea-package{
+    width:4.38rem;
+    height:4rem;
+    margin:0.4rem auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

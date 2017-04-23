@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/getMoney.css" media="screen" />
+    <title>点我赚钱</title>
+</head>
+<body onload="onload()">
+<!--公共头部-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">点我赚钱</h2>
+        <a href="" class="btn btn-shared"></a>
+    </div>
+</header>
+
+<section>
+    <div id="wg-all-wrapper">
+        <div id="wg-all-scroller">
+            <!--大图背景-->
+            <div class="ge-money-bigImg">
+                <img src="img/get-money-bigImg.jpg" class="img-responsive" alt="背景大图片"  />
+            </div>
+            <!--ge-money-bigImg-->
+            <div class="label-rec">
+                <span class="rec rec-getMoney"></span>
+            </div>
+            <!--label-rec-->
+            <div class="label-list">
+                <div class="label-items p-left">
+                  <p class="txt-center txt-red label-txt">签到零钱</p>
+                  <p><img src="img/red-package.jpg" class="img-responsive"  /></p>
+                  <p><a href="" class="getBtn txt-center bg-red">现今天天领</a></p>
+                </div>
+                <!--label-items-->
+                <div class="label-items p-right">
+                    <p class="txt-center txt-purpose label-txt">幸运抽奖</p>
+                    <p><img src="img/getRewards.jpg" class="img-responsive"  /></p>
+                    <p><a href="" class="getBtn txt-center bg-purpose">好礼送不停</a></p>
+                </div>
+                <!--label-items-->
+                <div class="label-items p-left">
+                    <p class="txt-center txt-orange label-txt">摇一摇</p>
+                    <p><img src="img/red-shake.jpg" class="img-responsive"  /></p>
+                    <p><a href="" class="getBtn txt-center bg-orange">“金”喜不断</a></p>
+                </div>
+                <!--label-items-->
+                <div class="label-items p-right">
+                    <p class="txt-center txt-blue label-txt">今日任务</p>
+                    <p><img src="img/getTask.jpg" class="img-responsive"  /></p>
+                    <p><a href="" class="getBtn txt-center bg-blue">轻松赚微币</a></p>
+                </div>
+                <!--label-items-->
+            </div>
+            <!--label-list-->
+
+            <div class="label-rec">
+                <span class="rec rec-high"></span>
+            </div>
+            <!--label-rec-->
+            <div class="label-list marginBInit">
+                <div class="label-items p-left">
+                    <p class="txt-center txt-orange label-txt">升级代理</p>
+                    <p><img src="img/getDaili.jpg" class="img-responsive"  /></p>
+                    <p><a href="" class="getBtn txt-center bg-orange txt-26">会玩手机就能赚钱</a></p>
+                </div>
+                <!--label-items-->
+                <div class="label-items p-right">
+                    <p class="txt-center txt-green label-txt">低价进货</p>
+                    <p><img src="img/getJinhuo.jpg" class="img-responsive"  /></p>
+                    <p><a href="" class="getBtn txt-center bg-green txt-26">方便低价的进货方式</a></p>
+                </div>
+                <!--label-items-->
+                <div class="label-items p-left">
+                    <p class="txt-center txt-purpose label-txt">入驻供货</p>
+                    <p><img src="img/getGH.jpg" class="img-responsive"  /></p>
+                    <p><a href="" class="getBtn txt-center bg-purpose txt-26">直面全国市场售卖</a></p>
+                </div>
+                <!--label-items-->
+                <div class="label-items p-right">
+                    <p class="txt-center txt-pink label-txt">线下联盟</p>
+                    <p><img src="img/getBLD.jpg" class="img-responsive"  /></p>
+                    <p><a href="" class="getBtn txt-center bg-pink txt-26">社区便利店新模式</a></p>
+                </div>
+                <!--label-items-->
+            </div>
+            <!--label-list-->
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/size.js"></script>
+<script type="text/javascript" src="js/TouchScroll.js"></script>
+<script type="text/javascript">
+    var myScroll='';
+    function onload(){
+        myScroll  = new IScroll('#wg-all-wrapper',{
+           scrollbars: true,
+           mouseWheel: false,//禁用鼠标
+           interactiveScrollbars: false,//禁用鼠标特效
+           shrinkScrollbars: 'scale',
+           fadeScrollbars: true
+       });
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+@charset "utf-8";
+body {
+    background: #f4f4f4
+}
+
+#wg-all-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0.88rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#wg-all-scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/*签到面板样式*/
+.info-panel {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.info-panel h2 {
+    margin-top: 0.45rem;
+    font-size: 0.32rem;
+    line-height: 1;
+    margin-bottom: 0.27rem;
+}
+
+.info-panel h2 span {
+    color: #ff3366;
+}
+
+.info-panel p {
+    font-size: 0.26rem;
+    line-height: 1;
+    color: #999;
+    margin-bottom: 0.3rem;
+}
+
+.info-panel p span {
+    color: #f36;
+}
+
+/*签到面板列表*/
+.info-btn-list {
+    padding: 0 0.5rem;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.day-txt {
+    font-size: 0.26rem;
+    line-height: 1.8;
+    color: #888;
+}
+
+.old .day-txt {
+    color: #ff85a3;
+}
+
+.active .day-txt {
+    color: #f36;
+}
+
+.infoBox {
+    position: relative;
+}
+
+.MR275 {
+    margin-right: 0.275rem
+}
+
+.MB24 {
+    margin-bottom: 0.24rem;
+}
+
+/*已签到*/
+.old-sign {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 77;
+    width: 1.08rem;
+    height: 1.08rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #ff85a3;
+}
+
+.old .old-sign {
+    display: block;
+}
+
+.active .old-sign {
+    display: block;
+    background: #f36;
+}
+
+.old-sign:before {
+    display: none;
+    position: absolute;
+    left: 50%;
+    content: '+1';
+    top: 0.1rem;
+    color: #fff;
+    font-size: 0.35rem;
+    line-height: 1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+}
+
+.old .old-sign:before {
+    display: block;
+}
+
+.active .old-sign:before {
+    -webkit-animation:Demo01 1s ease 0s 1 forwards;
+    -moz-animation:Demo01 1s ease 0s 1 forwards;
+    -ms-animation:Demo01 1s ease 0s 1 forwards;
+    -o-animation:Demo01 1s ease 0s 1 forwards;
+    animation:Demo01 1s ease 0s 1 forwards;
+    top: 0.5rem;
+    opacity: 0;
+    color: #ffff6d;
+    display: block;
+}
+
+.old-sign:after {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0.1rem;
+    content: '✔';
+    color: #fff;
+    font-size: 0.5rem;
+    line-height: 1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.old .old-sign:after {
+    display: block;
+}
+
+.active .old-sign:after {
+    display: block;
+}
+
+.click-panel {
+    display: block;
+    width: 1.08rem;
+    height: 1.08rem;
+    border: 1px solid #ff85a3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.active .click-panel {
+    border: 1px solid #f36;
+}
+
+.click-panel > i {
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    margin: 0.1rem auto;
+    background: url("../img/wb.png") center center no-repeat;
+    background-size: contain;
+}
+
+.click-panel > p {
+    margin-top: 0.12rem;
+    font-size: 0.26rem;
+    line-height: 1;
+    color: #ff85a3;
+}
+
+/*签到动画*/
+@-webkit-keyframes Demo01{
+    from{
+        top: 0.5rem;
+        opacity: 0;
+    }to{
+        top: 0.1rem;
+        opacity: 1;
+         }
+}
+
+
+
+
+
+/*签到进度条*/
+.signIn-progressBar {
+    width: auto;
+    height: auto;
+    padding: 0.46rem 0.28rem;
+    overflow: hidden;
+    background: #fff;
+
+}
+
+.progress-bar {
+    position: relative;
+    z-index: 88;
+    display: block;
+    width: 6.94rem;
+    height: 0.12rem;
+}
+
+.L33 {
+    left: 29%
+}
+
+.L66 {
+    left: 62%
+}
+
+.L100 {
+    left: 96%;
+}
+
+.progress-bar .label {
+    position: absolute;
+    top: -0.16rem;
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    font-size: 0.26rem;
+    line-height: 0.44rem;
+    text-align: center;
+    -webkit-border-radius: 0.44rem;
+    -moz-border-radius: 0.44rem;
+    border-radius: 0.44rem;
+    background: #ff85a3;
+    color: #fff;
+}
+
+.selected {
+    background: #f36 !important;
+}
+
+.progres-bar-gray {
+    background: #ddd;
+}
+
+.active-progress-bar {
+    display: block;
+    width: 0%;
+    height: 0.12rem;
+    background: #f36;
+    border-radius: 0.12rem;
+    -webkit-border-radius: 0.12rem;
+    -moz-border-radius: 0.12rem;
+}
+
+/*去做更多的任务*/
+
+.get-more-task {
+    padding: 0.48rem;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.do-more {
+    padding-left: 0.2rem;
+    padding-right: 0.94rem;
+    margin: 0 auto;
+    display: block;
+    width:4.28rem;
+    height:0.88rem;
+    font-size: 0.34rem;
+    line-height: 0.88rem;
+    text-align: center;
+    color: #fff;
+    background: url("../img/get-ok.png") center center no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+

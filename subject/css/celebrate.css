@@ -1,0 +1,169 @@
+@charset "utf-8";
+.celebrate-bg {
+    width: auto;
+    height: 4.89rem;
+    overflow: hidden;
+    background: url("../img/celebrate-bg.jpg") center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+
+/*专题标签*/
+.celebrate-99{
+    width:7.5rem;
+    height: 1.45rem;
+    background: url("../img/celebrate-label99.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.celebrate-199{
+    width:7.5rem;
+    height: 1.46rem;
+    background: url("../img/celebrate-label199.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.celebrate-299{
+    width:7.5rem;
+    height: 1.48rem;
+    background: url("../img/celebrate-label299.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+
+
+.celebrate-content-box {
+    padding:0 0.1rem;
+    width: 7.5rem;
+    height: auto;
+    background: #ff613c;
+    overflow: hidden;
+}
+
+.celebrate-content-box .c-box{
+    padding: 0 0.06rem 0.34rem;
+    width:7.3rem;
+    height:auto;
+    overflow: hidden;
+    background: #fc348a;;
+}
+
+.celebrate-content-box .c-items{
+    padding-bottom: 0.2rem;
+    width:3.56rem;
+    height:auto;
+    margin:0 0.06rem 0.06rem 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.celebrate-content-box .c-items-img{
+    display: block;
+    width:3.56rem;
+    height:3.56rem;
+    background: #f3effe;
+    overflow: hidden;
+}
+
+.celebrate-content-box .c-items-name{
+    padding:0 0.1rem;
+    display: block;
+    width:3.56rem;
+    height:0.64rem;
+    overflow: hidden;
+    -webkit-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 0.24rem;
+    line-height:0.64rem;
+    color: #333;
+}
+
+.celebrate-content-box .c-items-price{
+    padding:0 0.1rem;
+    display: block;
+    position: relative;
+    width:auto;
+    height:0.58rem;
+    font-size:0.24rem;
+    line-height:0.58rem;
+    color: #ff6039;
+    overflow: hidden;
+}
+
+.celebrate-content-box label{
+    font-size:0.2rem;
+}
+
+.celebrate-content-box .dollar{
+    margin-left: 0.07rem;
+}
+
+.celebrate-content-box .c-active-price{ 
+    position: absolute;
+    top:0;
+    right:0;
+    display: block;
+    width:1.36rem;
+    height: 0.58rem;
+    background: #fc348a;
+    color: #fff;
+    text-align: center;
+    font-size: 0.2rem;
+    font-weight:400;
+    line-height:0.58rem;
+    border-top-left-radius: 0.58rem;
+    border-bottom-left-radius: 0.58rem;
+    -webkit-border-bottom-left-radius: 0.58rem;
+    -webkit-border-top-left-radius: 0.58rem;
+    -moz-border-radius-topleft: 0.58rem;
+    -moz-border-radius-bottomleft: 0.58rem;
+}
+
+.celebrate-content-box .c-active-price>em{
+    margin-left: 0.07rem;
+    font-size:0.28rem;
+}
+
+
+.celebrate-footer{
+    position: relative;
+    width:7.5rem;
+    height:1.6rem;
+    background: url("../img/celebrate-footer.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.TOP{
+    position: absolute;
+    top:0.17rem;
+    left:50%;
+    display: block;
+    width:1.16rem;
+    height: 1.16rem;
+    overflow: hidden;
+    -webkit-transform: translate3d(-50%,0,0);
+    -moz-transform: translate3d(-50%,0,0);
+    transform: translate3d(-50%,0,0);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

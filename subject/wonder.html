@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script type="text/javascript" src="../js/size.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" href="css/wonder.css" type="text/css" media="screen">
+    <title>万达广场--3·18</title>
+
+</head>
+<body onload="wonderLoad()">
+<section>
+    <div id="scroll-wrapper">
+        <div id="scroll-container">
+            <div class="wonder-big-img"><img src="img/wonder-bg.jpg"  class="img-responsive" alt=""></div>
+            <div class="wonder-frm">
+                <form action="" role="form">
+                    <div class="ac-mobile"><input type="text" class="ac-mobile-input p-left" placeholder="请输入手机号码" maxlength="11"></div>
+                    <a class="ac-btn" href="javascript:void(0);"></a>
+                </form>
+            </div>
+            <div class="wonder-label"></div>
+            <div class="wonder-gift"><img src="img/wonder-gift-01.jpg" class="img-responsive" alt=""></div>
+            <div class="wonder-gift"><img src="img/wonder-gift-02.jpg" class="img-responsive" alt=""></div>
+            <div class="wonder-gift"><img src="img/wonder-gift-03.jpg" class="img-responsive" alt=""></div>
+            <div class="wonder-addr">
+                <div class="wonder-addr-txt">3.18日至台州万达广场1号门中庭大厅</div>
+            </div>
+            <div class="wonder-reward">
+                <div class="wonder-addr-txt">
+                    <p>前100名送价值68元的珊瑚绒毛毯一条</p>
+                    <p>前101-150名送价值30元水杯一个</p>
+                    <p>前151-200名送价值20元U形枕一个</p>
+                </div>
+            </div>
+
+            <div class="wonder-regular">
+                <div class="wonder-addr-txt">
+                    <p>1.在本活动页面领取兑换码并保存兑换码图片</p>
+                    <p>2.活动当天到台州万达广场1号门中庭大厅扫描微购一站和掌上台州公众号，并核销兑换码，即可领取奖品</p>
+                    <p>3.数量有限先到先得</p>
+                </div>
+            </div>
+
+            <div class="wonder-main"></div>
+            <div class="wonder-partner"></div>
+            <div class="wonder-top">
+                <a href="javascript:void(0);" id="top"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="layer-msg">
+    <div class="layer-code">
+        <span class="code-txt txt-center">QMGFJHTJHJDFKJ</span>
+        <a href="javascript:void(0);" class="save-btn txt-center">保存兑换码至手机</a>
+        <a href="javascript:void(0);" class="close-pane"></a>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/TouchScroll.js"></script>
+<script type="text/javascript">
+    var Myscroll = '';
+    function wonderLoad() {
+        Myscroll = new IScroll('#scroll-wrapper', {
+            click: true,
+            touchend: true,
+            preventDefault: true,
+            preventDefaultException: {tagName: /^(INPUT|A|SPAN)$/},
+            scrollbars: true,
+            shrinkScrollbars: 'clip'
+        });
+
+        //图片懒加载处理
+        function ImgLazyLoad() {
+            $("img").each(function (i, t) {
+                //含有懒加载属性就执行懒加载
+                if ($(t).attr('lazyImg') && (recorder <= i)) {
+                    //标签含有需要懒加载的图片 执行图片懒加载
+                    if ($(t).offset().top <= (Myscroll.wrapperHeight - Myscroll.y)) {
+                        recorder = i;
+                        $(t).attr('src', $(t).attr('lazyImg'));
+                    }
+                }
+            });
+        }
+
+        $("#top").on('touchend',function(){
+            Myscroll.scrollTo(0,0,300,IScroll.utils.ease.quadratic)
+        });
+
+        $(".ac-btn").on('touchend',function(){
+           $(".layer-msg").show();
+        });
+
+        $(".close-pane").on('touchend',function(){
+            $(".layer-msg").hide();
+        });
+
+    }
+</script>
+
+</body>
+</html>

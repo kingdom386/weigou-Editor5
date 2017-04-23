@@ -1,0 +1,596 @@
+@charset "utf-8";
+body {
+    background: #f4f4f4;
+}
+
+#wg-all-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0.88rem;
+    bottom: 0rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#wg-all-scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.sign-in-infoPanel {
+    width: auto;
+    height: 3.48rem;
+    background: #fff;
+    padding: 0 0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.sign-in-info-floor {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.sign-in-click {
+    position: relative;
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0.4rem auto;
+}
+
+.click-btn {
+    display: block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.click-btn-down {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    z-index: 22;
+    background: #ffeaef;
+}
+
+.click-btn-up {
+    top: 0.1rem;
+    left: 0.1rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    z-index: 33;
+    background: linear-gradient(to bottom, rgba(255, 99, 58, 1), rgba(254, 79, 104, 1));
+    background: -webkit-linear-gradient(to bottom, rgba(255, 99, 58, 1), rgba(254, 79, 104, 1));
+    background: -moz-linear-gradient(to bottom, rgba(255, 99, 58, 1), rgba(254, 79, 104, 1));
+}
+
+.click-btn-up-txt {
+    font-size: 0.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: #fff;
+}
+
+/*我的微币*/
+
+.infoPanel-mywb {
+    display: block;
+    position: absolute;
+    z-index: 77;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.infoPanel-mywb label {
+    text-align: center;
+    color: #666;
+    font-size: 0.26rem;
+    line-height: 1.8;
+}
+
+.infoPanel-mywb label:after {
+    content: ">";
+    font-family: '宋体';
+    margin-left: 0.1rem;
+    font-size: 0.26rem;
+    line-height: 1.8;
+}
+
+.infoPanel-mywb > p {
+    text-align: center;
+    color: #ff3366;
+    font-size: 0.26rem;
+    line-height: 1.8;
+}
+
+.infoPanel-mywb > p em {
+    font-size: 0.32rem;
+}
+
+/*签到规则*/
+.sign-regular {
+    display: block;
+    position: absolute;
+    z-index: 77;
+    right: 0;
+    color: #666;
+}
+
+.sign-regular > label {
+    font-size: 0.26rem;
+    line-height: 1.8;
+}
+
+/*消息通告*/
+.sign-in-ohter {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.sign-in-ohter .msg-notice {
+    position: relative;
+    display: block;
+    margin-top: 0.24rem;
+    width: 4.38rem;
+    height: 0.36rem;
+    font-size: 0.26rem;
+    line-height: 0.36rem;
+    color: #333;
+    padding-left: 0.5rem;
+}
+
+.wg-icon {
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../img/msg-notice.png") center center no-repeat;
+    background-size: contain;
+}
+
+.btn-exchange {
+    right: 0;
+    top: 0.15rem;
+    display: block;
+    width: 1rem;
+    height: 0.58rem;
+    text-align: center;
+    font-size: 0.45rem;
+    line-height: 0.58rem;
+    color: #ff3366;
+    -webkit-border-radius: 0.58rem;
+    -moz-border-radius: 0.58rem;
+}
+
+/*分类按钮入口样式*/
+.enter-icon-panel {
+    display: block;
+    width: auto;
+    height: 2.56rem;
+    margin-bottom: 0.1rem;
+    background: #fff;
+}
+
+.col-25 {
+    width: 25%;
+    height: auto;
+}
+
+.enter-icon-panel .wg-enter-ico {
+    display: block;
+    width: 1.32rem;
+    height: 1.32rem;
+    margin: 0.28rem auto;
+}
+
+.wg-enter-ico-shop {
+    background: url("../img/enter-ico-shop.png") center center no-repeat;
+    background-size: contain;
+}
+
+.wg-enter-ico-shake {
+    background: url("../img/enter-ico-shake.png") center center no-repeat;
+    background-size: contain;
+}
+
+.wg-enter-ico-gift {
+    background: url("../img/enter-ico-gift.png") center center no-repeat;
+    background-size: contain;
+}
+
+.wg-enter-ico-task {
+    background: url("../img/enter-ico-task.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*入口说明文字标签*/
+.enter-icon-panel p {
+    font-size: 0.26rem;
+    text-align: center;
+    color: #666;
+    line-height: 1.5;
+}
+
+/*其他产品展示样式*/
+.sign-in-other-info {
+    width: auto;
+    height: auto;
+    padding: 0 0.2rem;
+    margin-bottom: 0.1rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.sign-in-title {
+    position: relative;
+    width: auto;
+    height: 0.88rem;
+}
+
+.title-1 {
+    position: absolute;
+    top: 0.24rem;
+    left: 0;
+    display: block;
+    width: 0.06rem;
+    height: 0.4rem;
+    background: #ff3366;
+}
+
+.sign-in-title > h3 {
+    padding-left: 0.3rem;
+    font-size: 0.3rem;
+    line-height: 0.88rem;
+    color: #ff3366;
+}
+
+.check-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 0.3rem;
+    line-height: 0.88rem;
+    color: #666;
+}
+
+.check-more:after {
+    content: '>';
+    font-family: '宋体';
+    font-size: 0.26rem;
+    margin-left: 0.1rem;
+    line-height: 0.88rem;
+}
+
+/*其他类型产品展示样式*/
+.other-info-panel {
+    width: auto;
+    height: 2.57rem;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-bottom: 0.1rem;
+}
+
+.other-info-panel span {
+    display: block;
+    overflow: hidden;
+}
+
+/*新增 20170228 start*/
+.sin-in-themes{
+    width:1.66rem;
+    height:auto;
+    padding:0.15rem;
+}
+
+.sin-in-themes .pro-logo{
+    display: block;
+    width:1.28rem;
+    height:1.28rem;
+}
+
+.sign-in-items{
+    padding:0.15rem;
+    width:1.74rem;
+    height:auto;
+    overflow: hidden;
+}
+
+.sign-in-items .pro-logo{
+    display: block;
+    width:1.4rem;
+    height:1.4rem;
+}
+
+.sign-in-coupons{
+    padding:0.1rem;
+    width:1.92rem;
+    height:auto;
+    overflow: hidden;
+}
+
+/*新增 20170228 end*/
+/*
+.pro-logo {
+    padding: 0.1rem;
+}
+*/
+
+.pro-name {
+    /*padding: 0 0.1rem;*/
+    font-size: 0.28rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pro-intro {
+   /* padding: 0 0.1rem;*/
+    font-size: 0.26rem;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pro-price {
+    font-size: 0.24rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #ff3366
+}
+
+.pro-price em {
+    font-size: 0.3rem;
+    line-height: 1.5;
+}
+
+.now-price {
+    font-size: 0.3rem;
+    line-height: 1.4rem;
+    color: #ff3366;
+}
+
+.now-price em {
+    font-size: 0.75rem;
+    line-height: 1.6rem;
+    color: #ff3366
+}
+
+/*立即购买*/
+.btn-buy {
+    width: 1.58rem;
+    height: 0.58rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #ff3366;
+    font-size: 0.28rem;
+    line-height: 0.58rem;
+    text-align: center;
+    color: #fff;
+}
+
+/*猜你喜欢样式*/
+.sign-in-guess-ULike {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.ULike-title {
+    width: auto;
+    height: 0.89rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #ff3366;
+    background: #fff;
+    line-height: 0.89rem;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.ULike-title-txt {
+    position: relative;
+    display: block;
+    width: 1.75rem;
+    height: 0.33rem;
+    line-height: 0.33rem;
+    font-size: 0.3rem;
+    text-align: center;
+    margin: 0.28rem auto;
+    padding-left: 0.38rem;
+}
+
+.ULike-title-txt i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 0.33rem;
+    height: 0.33rem;
+    background: url("../img/Ulike-star.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*猜你喜欢产品列表展示样式*/
+.ULike-pro-list {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.ULike-pro-item {
+    width: 3.7rem;
+    height: auto;
+    background: #fff;
+    margin-bottom: 0.1rem;
+}
+
+.items-name {
+    margin-top: 0.1rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    padding: 0 0.1rem;
+    font-size: 0.26rem;
+    color: #383838;
+    line-height: 1.5;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.items-price {
+    padding: 0.05rem 0.1rem;
+    font-size: 0.22rem;
+    line-height: 1.8;
+    color: #ff3366;
+}
+
+.items-price span {
+    font-size: 0.3rem;
+    line-height: 1.8;
+}
+
+.layer-out {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    background: rgba(0, 0, 0, .5);
+}
+
+.layer-regular {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3.15rem;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 6.3rem;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.layer-regular h3 {
+    margin-top: 0.5rem;
+    font-size: 0.36rem;
+    line-height: 0.58rem;
+    color: #fff;
+    text-align: center;
+    background: url("../img/Silk_ribbon.png") center center no-repeat;
+    background-size: contain;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0.22rem;
+    right: 0.3rem;
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+    background: url("../img/close-x.png") center center no-repeat;
+    background-size: contain;
+}
+
+.main-content {
+    margin: 0.5rem auto;
+    width: 5.88rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.main-content p {
+    position: relative;
+    padding-left: 0.4rem;
+    font-size: 0.26rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+.main-content p i {
+    position: absolute;
+    left: 0;
+    top: 0.02rem;
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    font-size: 0.26rem;
+    line-height: 1.5;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    background: #ff9900
+}
+
+.regular-btn {
+    display: block;
+    width: 2.6rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    margin: 0.2rem auto;
+    background: #ff3366;
+    -webkit-border-radius: 0.68rem;
+    -moz-border-radius: 0.68rem;
+    border-radius: 0.68rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #fff;
+}
+
+.regular-btn-orange{
+    background: #fda506;
+}
+
+
+
+
+
+
+

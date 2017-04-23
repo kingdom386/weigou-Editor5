@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" href="css/clear.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/purchase.css" type="text/css" media="screen">
+    <style type="text/css">
+        ::-webkit-input-placeholder {
+            color: #fdad22;
+        }
+
+        ::-moz-input-placeholder {
+            color: #fdad22;
+        }
+
+        :-moz-input-placeholder {
+            color: #fdad22;
+        }
+
+        :-ms-input-placeholder {
+            color: #fdad22;
+        }
+    </style>
+    <title>一元购收货地址</title>
+</head>
+<body style="background: #fff;" onload="publicScroll()">
+<!--公共头部  微信头部不要加 app头部要加样式需要根据实际情况进行修改且样式均为统一-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">微购一站</h2>
+        <a href="javascript:void(0);" class="btn btn-shared"></a>
+    </div>
+</header>
+<!--整体内容滑动-->
+<section>
+    <div id="scroll-wrapper">
+        <div id="scroll-container">
+            <div class="purchase-addr-topImg">
+                <img src="img/purchase-addr-topImg.png" class="img-responsive" alt="">
+            </div>
+            <!--purchase-addr-topImg-->
+            <form action="" role="form">
+                <div class="purchase-addr-person">
+                    <div class="frm-input-box box-person">
+                        <input type="text" placeholder="收货人" class="p-left frm-label" maxlength="4" name="addr-purson">
+                    </div>
+                    <!--frm-input-box-->
+                </div>
+                <!--purchase-addr-person-->
+
+                <div class="purchase-addr-mobile">
+                    <div class="frm-input-box box-mobile">
+                        <input type="text" placeholder="手机号码" class="p-left frm-label" maxlength="11" name="addr-mobile">
+                    </div>
+                    <!--frm-input-box-->
+                </div>
+                <!--purchase-addr-person-->
+
+                <div class="purchase-addr-area">
+                    <div class="frm-input-box box-area">
+                        <input type="text" placeholder="省、市、区" class="p-left frm-label" maxlength="40" name="addr-area">
+                    </div>
+                    <!--frm-input-box-->
+                </div>
+                <!--purchase-addr-person-->
+
+                <div class="purchase-addr-addre">
+                    <div class="frm-input-box box-addr">
+                        <input type="text" placeholder="详细地址" class="p-left frm-label" maxlength="50" name="addr-area">
+                    </div>
+                    <!--frm-input-box-->
+                </div>
+                <!--purchase-addr-person-->
+                <div class="purchase-addr-sub">
+                    <a href="javascript:void(0);" class="frm-btn-sub">提交</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="js/size.js" type="text/javascript"></script>
+<script src="js/zepto.min.js" type="text/javascript"></script>
+<script src="js/TouchScroll.js" type="text/javascript"></script>
+<script src="js/LazyImgLoad.js" type="text/javascript"></script>
+</body>
+</html>

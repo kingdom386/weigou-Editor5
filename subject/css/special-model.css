@@ -1,0 +1,203 @@
+@charset "utf-8";
+body {
+    background: #feffd9 !important;
+}
+
+.special-bg {
+    width: auto;
+    height: 4.38rem;
+    overflow: hidden;
+    background: url("../img/special-bg.jpg") center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.special-pro-themes {
+    width: auto;
+    height: 2.92rem;
+    background: url("../img/special-themes.jpg") center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.special-pro-first {
+    width: auto;
+    height: 2.72rem;
+    background: url('../img/special-pro-first.jpg') center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.special-pro-second {
+    width: auto;
+    height: 2.58rem;
+    background: url('../img/special-pro-second.jpg') center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.special-pro-third {
+    width: auto;
+    height: 2.94rem;
+    background: url('../img/special-pro-third.jpg') center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.special-pro-forth {
+    width: auto;
+    height: 2.76rem;
+    background: url('../img/special-pro-forth.jpg') center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.footer-back {
+    width: auto;
+    height: 2.05rem;
+    background: url("../img/special-end.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.footer-back > a {
+    position: relative;
+    top: 0.6rem;
+    left: 50%;
+    display: block;
+    width: 1.68rem;
+    height: 0.42rem;
+    -webkit-transform: translate3d(-50%, 0, 0) rotateX(20deg);
+    -moz-transform: translate3d(-50%, 0, 0) rotateX(20deg);
+    transform: translate3d(-50%, 0, 0) rotateX(20deg);
+
+}
+
+.special-pro-themes > img {
+    margin: 0.2rem auto 0;
+    display: block;
+    width: auto;
+    max-height: 2.68rem;
+    overflow: hidden;
+}
+
+/*图片信息*/
+.special-pro-first .special-pro-imgLeft, .special-pro-second .special-pro-imgLeft, .special-pro-third .special-pro-imgLeft, .special-pro-forth .special-pro-imgLeft {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+/*盒子信息内容*/
+.special-pro-first .special-pro-infoRight, .special-pro-second .special-pro-infoRight, .special-pro-third .special-pro-infoRight, .special-pro-forth .special-pro-infoRight {
+    width: 3.05rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.special-pro-first .special-pro-infoRight .special-pro-name, .special-pro-second .special-pro-infoRight .special-pro-name, .special-pro-third .special-pro-infoRight .special-pro-name, .special-pro-forth .special-pro-infoRight .special-pro-name {
+    padding: 0 0.1rem;
+    margin-bottom: 0.22rem;
+    width: auto;
+    height: 0.38rem;
+    background: #79a818;
+    font-size: 0.26rem;
+    line-height: 0.38rem;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.special-pro-first .special-pro-infoRight .special-pro-intro, .special-pro-second .special-pro-infoRight .special-pro-intro, .special-pro-third .special-pro-infoRight .special-pro-intro, .special-pro-forth .special-pro-infoRight .special-pro-intro {
+    display: -webkit-box;
+    display: -moz-box;
+    width: auto;
+    height: 0.72rem;
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    color: #333;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.special-pro-first .special-pro-infoRight .pro-price, .special-pro-second .special-pro-infoRight .pro-price, .special-pro-third .special-pro-infoRight .pro-price, .special-pro-forth .special-pro-infoRight .pro-price {
+    width: auto;
+    height: 0.5rem;
+    font-size: 0.24rem;
+    color: #f00;
+    line-height: 0.5rem;
+    text-align: right;
+    overflow: hidden;
+}
+
+.special-pro-first .special-pro-infoRight .pro-price > em, .special-pro-second .special-pro-infoRight .pro-price > em, .special-pro-third .special-pro-infoRight .pro-price > em, .special-pro-forth .special-pro-infoRight .pro-price > em {
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    margin-left: 0.01rem;
+}
+
+.special-pro-first .special-pro-infoRight .getBtn, .special-pro-second .special-pro-infoRight .getBtn, .special-pro-third .special-pro-infoRight .getBtn, .special-pro-forth .special-pro-infoRight .getBtn {
+    display: block;
+    text-align: center;
+    width: 1.6rem;
+    height: 0.35rem;
+    background: #ff5400;
+    font-size: 0.24rem;
+    line-height: 0.35rem;
+    color: #fff;
+}
+
+/*盒子位置*/
+.special-pro-first .box-margin {
+    margin-top: 0.2rem;
+    margin-left: 0.86rem;
+}
+
+.special-pro-second .box-margin {
+    margin-top: 0.26rem;
+    margin-right: 0.7rem;
+}
+
+.special-pro-third .box-margin {
+    margin-top: 0.3rem;
+    margin-left: 0.86rem;
+}
+
+.special-pro-forth .box-margin {
+    margin-top: 0.4rem;
+    margin-right: 0.7rem;
+}
+
+.special-pro-first .infoBox {
+    margin-top: 0.5rem;
+    margin-right: 0.4rem;
+}
+
+.special-pro-second .infoBox {
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+.special-pro-third .infoBox {
+    margin-top: 0.56rem;
+    margin-right: 0.4rem;
+}
+
+.special-pro-forth .infoBox {
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+.txt-left {
+    text-align: left !important;
+}
+
+.model-area {
+    margin-bottom: 0.3rem;
+}

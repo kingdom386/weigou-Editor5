@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/lucky-draw.css" media="screen"/>
+    <title>我的中奖纪录</title>
+</head>
+<body onload="recorder()">
+<!--公共头部  微信头部不要加 app头部要加-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">微购一站</h2>
+        <a href="" class="btn btn-shared"></a>
+    </div>
+</header>
+
+
+<section>
+    <div id="scroll-wrapper" style="bottom: 0">
+        <div id="scroll-container">
+            <!--没有任何重点中奖纪录-->
+            <div class="recorder-bg"></div>
+            <!-- 有中奖纪录 -->
+            <div class="recorder-wrapper">
+                <div class="recorder-title">本月</div>
+                <!--recorder-title-->
+                <div class="recorder-list">
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                </div>
+                <!--recorder-list-->
+
+
+                <div class="recorder-title">2017-01-12</div>
+                <!--recorder-title-->
+                <div class="recorder-list">
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+
+                    <div class="recorder-items">
+                        <span class="user-portrait"><img class="img-responsive"/></span>
+                        <p>抽中<em>56个微币</em></p>
+                        <span class="get-time">01-12</span>
+                    </div>
+                    <!--recorder-items-->
+                </div>
+                <!--recorder-list-->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="text/javascript" src="js/size.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/TouchScroll.js"></script>
+<script type="text/javascript" src="js/LazyImgLoad.js"></script>
+<script type="text/javascript">
+    function recorder() {
+        //标记
+        var flag = false;//默认没有中奖纪录
+        var node = document.getElementsByTagName('body')[0];
+        //判断该用户是否有中奖纪录
+        if (flag) {
+            //若没有中奖纪录 执行以下js
+            node.style.width = window.screen.availWidth + 'px';
+            node.style.height = window.screen.availHeight + 'px';
+            node.setAttribute('class', 'no-recorder');
+            document.getElementsByClassName('recorder-bg')[0].style.display = 'block';
+            document.getElementsByClassName('recorder-wrapper')[0].style.display = 'none'
+
+        } else {
+            //若中奖纪录不为空 执行以下js
+            node.style.background = '#fff';
+        }
+        //IOS 上下滑动
+        publicScroll();
+    }
+
+</script>
+
+</body>
+</html>

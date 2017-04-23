@@ -1,0 +1,168 @@
+@charset "utf-8";
+body {
+    background: #ddd;
+}
+
+#wg-all-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0.88rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#wg-all-scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/*大图背景样式*/
+.ge-money-bigImg {
+    width: auto;
+    height: 3rem;
+}
+
+.label-rec {
+    width: auto;
+    height: 1.3rem;
+    overflow: hidden;
+    background: #f4f4f4;
+}
+
+.rec {
+    display: block;
+    width: 3.08rem;
+    height: 0.68rem;
+    margin: 0.32rem auto;
+}
+
+.rec-getMoney {
+    background: url("../img/get-money-label.png") center center no-repeat;
+    background-size: contain;
+}
+
+.rec-high {
+    background: url("../img/getHigh.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*标签列表内容样式*/
+.label-list {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    padding: 0 0.44rem;
+    background: #f4f4f4;
+    margin-bottom: 0.2rem;
+}
+
+.label-items {
+    width: 3.12rem;
+    height: auto;
+    background: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.label-txt {
+    margin-top: 0.2rem;
+    font-size: 0.4rem;
+    line-height: 1.8;
+}
+
+.txt-red {
+    color: #ff3366;
+}
+
+.txt-purpose {
+    color: #9c72e2;
+}
+
+.txt-orange {
+    color: #f28c03;
+}
+
+.txt-blue {
+    color: #13a8f3;
+}
+
+.txt-green {
+    color: #4fc65d;
+}
+
+.txt-pink {
+    color: #ff58a3;
+}
+
+/*标签按钮样式*/
+.getBtn {
+    display: block;
+    width: 2.52rem;
+    height: 0.56rem;
+    margin: 0.1rem auto;
+    font-size: 0.32rem;
+    line-height: 0.56rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.bg-red {
+    background: #ff3366
+}
+
+.bg-purpose {
+    background: #9c72e2
+}
+
+.bg-orange {
+    background: #f28c03
+}
+
+.bg-blue {
+    background: #13a8f3
+}
+
+.bg-green{
+    background: #4fc65d
+}
+
+.bg-pink{
+    background: #ff58a3
+}
+
+.txt-26 {
+    font-size: 0.26rem;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+input:focus{
+    color: #000;
+}
+
+input:-moz-placeholder{
+    text-align: center;
+    font-size:0.32rem;
+    color: #999;
+}
+
+input::-moz-placeholder{
+    text-align: center;
+    font-size:0.32rem;
+    color: #999;
+}
+
+input:-ms-input-placeholder{
+    text-align: center;
+    font-size:0.32rem;
+    color: #999;
+}
+
+input::-webkit-input-placeholder{
+    text-align: center;
+    font-size:0.32rem;
+    color: #999;
+}
+
+.wonder-frm {
+    width: 7.5rem;
+    height: 3.74rem;
+    background: url("../img/wonder-frm.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.ac-mobile{
+    width:6rem;
+    height:0.84rem;
+    margin:0.32rem auto;
+    -webkit-border-radius: 0.88rem;
+    -moz-border-radius: 0.88rem;
+    border-radius: 0.88rem;
+}
+
+.ac-mobile-input{
+    text-align: center;
+    padding:0 0.2rem;
+    width:6rem;
+    height:0.84rem;
+    color: #333;
+}
+
+.ac-btn{
+    margin:0 auto;
+    display: block;
+    width:6rem;
+    height:0.96rem;
+    -webkit-border-radius: 0.96rem;
+    -moz-border-radius: 0.96rem;
+    border-radius: 0.96rem;
+}
+
+
+.wonder-label{
+    width:auto;
+    height: 0.92rem;
+    background: url("../img/wonder-label.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.wonder-addr{
+    position: relative;
+    width:auto;
+    height:3rem;
+    background: url("../img/wonder-addr.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.wonder-addr-txt{
+    position: absolute;
+    padding:0 0.1rem;
+    width:6.4rem;
+    height:0.7rem;
+    left:50%;
+    bottom:0.08rem;
+    margin-left: -3.2rem;
+    font-size:0.3rem;
+    line-height:0.35rem;
+}
+
+.wonder-reward{
+    position: relative;
+    width:auto;
+    height:3.28rem;
+    background: url("../img/wonder-reward.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.wonder-reward .wonder-addr-txt{
+    height:1.78rem;
+    bottom:0.22rem;
+    margin-left: -3.2rem;
+}
+
+.wonder-reward .wonder-addr-txt>p{
+    margin-bottom: 0.2rem;
+}
+
+.wonder-regular{
+    position: relative;
+    width:auto;
+    height:4.1rem;
+    background: url("../img/wonder-regular.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.wonder-regular .wonder-addr-txt{
+    height:2.8rem;
+    bottom: 0.06rem;
+    line-height:0.45rem;
+}
+
+.wonder-main{
+    width:auto;
+    height:3.07rem;
+    background: url("../img/wonder-main.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.wonder-partner{
+    width:auto;
+    height:2.13rem;
+    background: url("../img/wonder-partner.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.wonder-top{
+    position: relative;
+    width:auto;
+    height:1.39rem;
+    background: url("../img/wonder-top.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.wonder-top #top{
+    display: block;
+    position: absolute;
+    left:50%;
+    width:0;
+    height:0;
+    margin-left:-0.68rem;
+    border-left:0.68rem  solid transparent;
+    border-right:0.68rem  solid transparent;
+    border-bottom:0.68rem  solid  transparent;
+}
+
+.layer-code{
+    position: absolute;
+    width:6.2rem;
+    height:6.7rem;
+    top:50%;
+    left:50%;
+    margin:-3.35rem 0 0 -3.2rem;
+    background: url("../img/exchange-code.png") center center no-repeat;
+    background-size: contain;
+}
+
+.layer-code .code-txt{
+    position: absolute;
+    display: block;
+    width:4.8rem;
+    height:0.82rem;
+    left:50%;
+    margin-left: -2.4rem;
+    bottom: 2.15rem;
+    font-size:0.3rem;
+    line-height:0.82rem;
+    color: #fff;
+}
+
+.layer-code .save-btn{
+    position: absolute;
+    display: block;
+    width:5.58rem;
+    height:1rem;
+    left:50%;
+    bottom: 0.42rem;
+    margin-left: -2.79rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    font-size: 0.48rem;
+    line-height:1rem;
+    background: #ff9822;
+    color:#fff
+}
+
+.layer-code .close-pane{
+    position: absolute;
+    width:0.56rem;
+    height:0.56rem;
+    left:50%;
+    bottom: -0.9rem;
+    margin-left: -0.28rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: url("../../img/close-x.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*兑换码的核销*/
+.write-off-img{
+    display: block;
+    width:7.5rem;
+    height:6.46rem;
+}
+
+.write-off{
+    width:auto;
+    height:2.32rem;
+    background: url("../img/write-off-frm.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.write-off .ac-code{
+    margin:0 auto 0.48rem;
+    padding:0 0.2rem;
+    width:6rem;
+    height:0.88rem;
+    color: #333;
+}
+
+.write-off .ac-code .ac-frm-input{
+    float:left;
+    width:6rem;
+    height:0.88rem;
+}
+
+.write-off-bg{
+    background: url("../img/write-off-layer.png") center center no-repeat;
+    background-size: contain;
+}
+
+
+
+

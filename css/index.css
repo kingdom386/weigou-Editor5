@@ -1,0 +1,484 @@
+@charset "utf-8";
+body {
+    background: #f4f4f4;
+}
+
+#scroll-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0.88rem;
+    bottom: 0.98rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#scroll-container {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    /*add 20170205*/
+    -webkit-transform:translate3d(0,0,0);
+    -moz-transform:translate3d(0,0,0);
+    -o-transform:translate3d(0,0,0);
+    -ms-transform:translate3d(0,0,0);
+
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/*搜索样式*/
+.wg-index-search {
+    position: relative;
+    width: auto;
+    height: 0.88rem;
+    background: #efefef;
+    padding: 0 0.2rem;
+    overflow: hidden;
+}
+
+.search-box {
+    position: relative;
+    width: auto;
+    height: 0.58rem;
+    margin: 0.15rem auto 0;
+    -webkit-border-radius: 0.58rem;
+    -moz-border-radius: 0.58rem;
+    border-radius: 0.58rem;
+    background: #fff;
+}
+
+/*搜索框白色字体样式*/
+.search-txt-down {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: inline-block;
+    width: 2.14rem;
+    height: 0.58rem;
+    font-size: 0.26rem;
+    line-height: 0.58rem;
+    color: #aaa;
+    margin-left: -1.01rem;
+}
+
+.activeFocus .search-txt-down {
+    position: absolute;
+    z-index: 77;
+    left: 1.17rem;
+    -webkit-transition: left .32s 0s ease-out;
+    -moz-transition: left .32s 0s ease-out;
+    -o-transition: left .32s 0s ease-out;
+    transition: left .32s 0s ease-out;
+}
+
+.search-txt-down > i.icon-search {
+    margin-right: 0.18rem;
+    font-size: 0.26rem;
+    line-height: 0.58rem;
+}
+
+.search-key {
+    /*add on 17/01/17*/
+    display: none;
+    position: absolute;
+    z-index: 88;
+    left: 0;
+    top: 0;
+    padding: 0 0.3rem 0 0.45rem;
+    width: 100%;
+    height: 0.58rem;
+    background: transparent;
+}
+
+.btn-cancle {
+    display: none;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.15rem;
+    width: 1rem;
+    height: 0.58rem;
+    line-height: 0.58rem;
+    font-size: 0.26rem;
+    color: #666;
+    z-index: 88;
+}
+
+/*大图片滑动*/
+.wg-index-bigImg-slide {
+    width: 7.5rem;
+    height: 3.2rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+.wg-index-bigImg-slide .swiper-slide {
+    background: url('../img/222x222.jpg') #fff center center no-repeat;
+    background-size: contain;
+}
+
+/*产品类型分类*/
+.wg-type-panel {
+    width: auto;
+    height: 1.82rem;
+    padding: 0 0.2rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.type-btn {
+    display: block;
+    width: 1.775rem;
+    height: 1.82rem;
+}
+
+.type-btn span {
+    display: block;
+    width: 0.98rem;
+    height: 0.98rem;
+    margin: 0.15rem auto;
+    background: url("../img/222x222.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.type-btn span, .type-btn p {
+    font-size: 0.26rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/*广告位*/
+.wg-index-ads {
+    margin-bottom: 0.2rem;
+    width: auto;
+    height: 2.2rem;
+    background: url('../img/222x222.jpg') #fff center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+/*产品展示*/
+.wg-index-pro-panel {
+    width: auto;
+    height: 3.8rem;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 0.1rem;
+}
+
+.wg-index-pro-left {
+    width: 3.48rem;
+    height: auto;
+    padding-left: 0.2rem;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+}
+
+/*限时抢购*/
+.wg-xianshi-title {
+    display: block;
+    width: 1.14rem;
+    height: 0.5rem;
+    margin: 0.18rem 0 0;
+}
+
+.wg-xianshi-label {
+    display: block;
+    font-size: 0.24rem;
+    line-height: 1.8;
+    color: #9b9b9b;
+}
+
+.wg-xianshi-time-panel {
+    display: block;
+    width: auto;
+    height: 0.36rem;
+    overflow: hidden;
+}
+
+.wg-xianshi-time-panel a {
+    display: none;
+    font-size: 0.18rem;
+    line-height: 0.36rem;
+    color: #9b9b9b
+}
+
+.wg-xianshi-time-panel .time-box {
+    position: relative;
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    margin-right: 0.16rem;
+    font-size: 0.21rem;
+    line-height: 0.36rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    background: #4c4c4c;
+}
+
+.wg-xianshi-time-panel .time-box:after {
+    position: absolute;
+    top: 0;
+    right: -0.1rem;
+    color: #4c4c4c;
+    content: ':';
+    font-family: 'MICROSOFT YAHEI';
+    font-size: 0.2rem;
+    line-height: 0.36rem;
+}
+
+.wg-xianshi-time-panel .lastTime:after {
+    content: none !important;
+}
+
+/*限时抢购产品图片*/
+.wg-xianshi-left-proImg {
+    position: relative;
+    margin-top: 0.18rem;
+    width: 3.28rem;
+    height: 2.16rem;
+}
+
+.xianshi-label-hot {
+    position: absolute;
+    display: block;
+    width: 0.82rem;
+    height: 0.84rem;
+    top: -0.62rem;
+    right: 0.34rem;
+    background: url("../img/xianshi-label.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*产品展示右侧*/
+.wg-index-pro-right {
+    width: 4.02rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.wg-index-pro-rightFloor {
+    width: auto;
+    height: 1.9rem;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+/*专题产品展示入口*/
+.wg-index-themes-panel {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.wg-index-box {
+    padding:0.1rem;
+    width: 3.75rem;
+    height: 2rem;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: #fff;
+}
+
+.wg-index-box>img{
+    display:block;
+    max-height:100%;
+    margin:0 auto;
+}
+
+/*品牌专题logo*/
+.wg-index-brand {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.wg-index-brand-title {
+    position: relative;
+    width: auto;
+    height: 0.68rem;
+    overflow: hidden;
+
+}
+
+.wg-index-brand-title-txt {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: auto;
+    height: auto;
+    padding-left: 0.5rem;
+    font-size: 0.28rem;
+    line-height: 0.68rem;
+    color: #555;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.title-icon {
+    position: absolute;
+    left: 0.05rem;
+    top: 0;
+    line-height: 0.68rem;
+    font-size: 0.3rem;
+    color: #f84848;
+
+}
+
+.wg-index-brand-content-box {
+    width: auto;
+    height: 4.4rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+.wg-index-two-floor {
+    width: 3.75rem;
+    height: 1.6rem;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.wg-index-three-floor {
+    width: 2.5em;
+    height: 1.4rem;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+/*热门精选*/
+.wg-index-jx {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.icon-jx {
+    display: block;
+    top: 0.165rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    background: url("../img/wg-index-jx.png") center center no-repeat;
+    background-size: contain;
+}
+
+.wg-jx-img {
+    width: auto;
+    height: 3.6rem;
+    background: url("../img/222x222.jpg") #fff center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+/*猜你喜欢*/
+.wg-index-ULike-list {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.wg-index-ULike-items {
+    padding-bottom: 0.1rem;
+    position: relative;
+    width: 3.70rem;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 0.1rem;
+}
+
+.items-img {
+    display: block;
+    width: 3.7rem;
+    height: 3.7rem;
+    background: url("../img/222x222.jpg") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.item-name {
+    display: -webkit-box;
+    display: -o-box;
+    display: box;
+    width: auto;
+    height: 0.78rem;
+    font-size: 0.26rem;
+    line-height: 0.39rem;
+    padding: 0 0.2rem;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    word-break: break-all;
+    color: #383838;
+}
+
+.item-price {
+    position: relative;
+    width: auto;
+    height: 0.72rem;
+    padding: 0 0.2rem;
+    overflow: hidden;
+    color: #ff5a3d;
+    font-size: 0.22rem;
+    line-height: 0.72rem;
+}
+
+.item-name a{
+    color: #383838
+}
+
+.item-price a{
+    color: #ff5a3d
+}
+
+
+
+.item-price span {
+    font-size: 0.28rem;
+}
+
+.item-price .getBtn{
+    position: absolute;
+    top: 0;
+    right: 0.2rem;
+    display: block;
+    width: 0.72rem;
+    height: 0.72rem;
+    font-size: 0.3rem;
+    line-height: 0.72rem;
+    color: #fff;
+    text-align: center;
+    background: url("../img/cart.png") #ff5a3d center center no-repeat;
+    background-size: contain;
+    -webkit-border-radius: 0.72rem;
+    -moz-border-radius: 0.72rem;
+    border-radius: 0.72rem;
+    overflow: hidden;
+}
+
+
+
+
+

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script type="text/javascript" src="js/size.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" media="screen"/>
+    <title>首页</title>
+    <style type="text/css">
+        .pull-down{
+            position: relative;
+            width:100%;
+            height:0;
+            overflow: hidden;
+        }
+
+        .pull-contents{
+            padding:0.2rem 0;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            width:100%;
+            height:auto;
+            font-size:0.3rem;
+            color: #999;
+            line-height:1.8;
+        }
+
+        .pull-contents strong{
+            color: #999;
+        }
+    </style>
+</head>
+<body onload="load()">
+
+<!--公共头部  微信头部不要加 app头部要加样式需要根据实际情况进行修改且样式均为统一-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">微购一站</h2>
+        <a href="" class="btn btn-shared"></a>
+    </div>
+</header>
+
+<!--整体内容滑动-->
+<section>
+    <div id="scroll-wrapper">
+        <div id="scroll-container">
+            <!--下拉刷新-->
+            <div class="pull-down">
+                <div class="pull-contents txt-center">
+                    <p>由<strong>南博万</strong>技术提供支持</p>
+                </div>
+            </div>
+            <!--搜索-->
+            <div class="wg-index-search">
+              <form action="" method="post">
+                  <a href="javascript:void(0);" class="btn-cancle txt-center">取消</a>
+                  <div class="search-box" onclick="showInput()">
+                      <span class="search-txt-down"><i class="icon-search"></i><span class="temp-txt">您喜欢的商品</span></span>
+                      <input type=text class="search-key p-left" name="searchWords" onblur="outs()"/>
+                  </div>
+              </form>
+            </div>
+            <!--wg-index-search-->
+            <!--大背景滚动-->
+            <div class="wg-index-bigImg-slide swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""><img lazyImg="img/img-slide.jpg" class="img-responsive"/></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img lazyImg="img/img-slide.jpg" class="img-responsive"/></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+
+                </div>
+            </div>
+            <!--wg-index-bigImg-slide-->
+            <!--产品类型分类-->
+            <div class="wg-type-panel">
+                <a href="" class="type-btn p-left">
+                   <span><img lazyImg="img/shop-type.png" class="img-responsive"/></span>
+                   <p class="txt-center">商品分类</p>
+                </a>
+                <a href="" class="type-btn p-left">
+                    <span><img lazyImg="img/shop-qd.png" class="img-responsive"/></span>
+                    <p class="txt-center">签到领钱</p>
+                </a>
+                <a href="" class="type-btn p-left">
+                    <span><img lazyImg="img/shop-yy.png" class="img-responsive"/></span>
+                    <p class="txt-center">摇一摇</p>
+                </a>
+                <a href="" class="type-btn p-left">
+                    <span><img lazyImg="img/shop-cj.png" class="img-responsive"/></span>
+                    <p class="txt-center">幸运抽奖</p>
+                </a>
+            </div>
+            <!--wg-type-panel-->
+            <!--广告位-->
+            <div class="wg-index-ads">
+               <img lazyImg="img/wg-ads.jpg" class="img-responsive" />
+            </div>
+            <!--wg-index-ads-->
+            <!-- 产品展示-->
+            <div class="wg-index-pro-panel">
+                <div class="wg-index-pro-left p-left">
+                   <span class="wg-xianshi-title"><img src="img/xianshiqiangou.png" class="img-responsive"></span>
+                   <span class="wg-xianshi-label">精挑细选 超值让利</span>
+                    <!--倒计时面板-->
+                   <span class="wg-xianshi-time-panel">
+                       <a href="" class="enter-btn p-left">进入查看更多精彩</a>
+                       <span class="time-box p-left txt-center time-hour">01</span>
+                       <span class="time-box p-left txt-center time-minute">45</span>
+                       <span class="time-box p-left txt-center lastTime time-seconds">25</span>
+                   </span>
+                  <div class="wg-xianshi-left-proImg">
+                      <span class="xianshi-label-hot"></span>
+                      <img lazyImg="img/xianshi-pro-images.jpg" class="img-responsive" />
+                  </div>
+                </div>
+                <!--wg-index-pro-left-->
+                <div class="wg-index-pro-right p-right">
+                    <div class="wg-index-pro-rightFloor">
+                        <img lazyImg="img/pro-right-images.jpg"  class="img-responsive" />
+                    </div>
+                    <div class="wg-index-pro-rightFloor borderNone">
+                        <img lazyImg="img/pro-right-images.jpg"  class="img-responsive" />
+                    </div>
+                </div>
+                <!--wg-index-pro-main-->
+            </div>
+            <!--wg-index-pro-panel-->
+            <!--专题产品入口-->
+            <div class="wg-index-themes-panel">
+                <div class="wg-index-box p-left">
+                    <img lazyImg="img/type-img.jpg"  />
+                </div>
+                <!--wg-index-box-->
+                <div class="wg-index-box p-left borderRInit">
+                    <img lazyImg="img/type-img.jpg"  />
+                </div>
+                <!--wg-index-box-->
+                <div class="wg-index-box p-left borderBInit">
+                    <img lazyImg="img/type-img.jpg"  />
+                </div>
+                <!--wg-index-box-->
+                <div class="wg-index-box p-left borderRInit borderBInit ">
+                    <img lazyImg="img/type-img.jpg" />
+                </div>
+                <!--wg-index-box-->
+            </div>
+            <!--wg-index-themes-panel-->
+            <!--品牌专区-->
+            <div class="wg-index-brand">
+                <div class="wg-index-brand-title">
+                    <span class="wg-index-brand-title-txt txt-center" ><i class="title-icon icon-star"></i>品牌专区</span>
+                </div>
+                <!--wg-index-brand-title-->
+                <div class="wg-index-brand-content-box">
+                    <div class="wg-index-two-floor p-left">
+                        <img lazyImg="img/logo-two.jpg" class="img-responsive"/>
+                    </div>
+                    <div class="wg-index-two-floor p-left borderRInit">
+                        <img lazyImg="img/logo-two.jpg" class="img-responsive"/>
+                    </div>
+                    <!--wg-index-two-floor-->
+                    <div class="wg-index-three-floor p-left">
+                        <img lazyImg="img/wg-two-logo.jpg" class="img-responsive"/>
+                    </div>
+                    <!--wg-index-three-floor-->
+                    <div class="wg-index-three-floor p-left">
+                        <img lazyImg="img/wg-two-logo.jpg" class="img-responsive"/>
+                    </div>
+                    <!--wg-index-three-floor-->
+                    <div class="wg-index-three-floor p-left borderRInit">
+                        <img lazyImg="img/wg-two-logo.jpg" class="img-responsive"/>
+                    </div>
+                    <!--wg-index-three-floor-->
+                    <div class="wg-index-three-floor p-left borderBInit">
+                        <img lazyImg="img/wg-two-logo.jpg" class="img-responsive"/>
+                    </div>
+                    <!--wg-index-three-floor-->
+                    <div class="wg-index-three-floor p-left borderBInit">
+                        <img lazyImg="img/wg-two-logo.jpg" class="img-responsive"/>
+                    </div>
+                    <!--wg-index-three-floor-->
+                    <div class="wg-index-three-floor p-left borderBInit borderRInit">
+                        <img lazyImg="img/wg-two-logo.jpg" class="img-responsive"/>
+                    </div>
+                    <!--wg-index-three-floor-->
+
+                </div>
+                <!--wg-index-brand-content-box-->
+            </div>
+            <!--wg-index-brand-->
+            <!--热门精选-->
+            <div class="wg-index-jx">
+                <div class="wg-index-brand-title">
+                    <span class="wg-index-brand-title-txt txt-center" ><i class="title-icon icon-jx"></i>热门精选</span>
+                </div>
+                <!--wg-index-brand-title-->
+                <div class="wg-jx-img marginB20">
+                    <img lazyImg="img/jx-bigImg.jpg" class="img-responsive"/>
+                </div>
+                <!--wg-jx-img-->
+                <div class="wg-jx-img">
+                    <img lazyImg="img/jx-bigImg.jpg" class="img-responsive"/>
+                </div>
+                <!--wg-jx-img-->
+            </div>
+            <!--wg-index-jx-->
+            <!--猜你喜欢-->
+            <div class="wg-index-ULike">
+                <div class="wg-index-brand-title">
+                <span class="wg-index-brand-title-txt txt-center" ><i class="title-icon icon-heart"></i>猜你喜欢</span>
+            </div>
+                <div class="wg-index-ULike-list">
+                    <div class="wg-index-ULike-items p-left">
+                       <span class="items-img"><a href=""><img lazyImg="img/0022.png" class="img-responsive" /></a></span>
+                       <p class="item-name"><a href="">美国原装</a></p>
+                       <p class="item-price">¥<span>3652.45</span><a href="javascript:void(0);" class="getBtn"></a></p>
+                    </div>
+                    <!--wg-index-ULike-items-->
+                    <div class="wg-index-ULike-items p-right">
+                        <span class="items-img"><a href=""><img lazyImg="img/2200.png" class="img-responsive" /></a></span>
+                        <p class="item-name"><a href="">美国原装进口oceanspray优鲜沛蔓越莓干1360g 烘焙原料蔓越梅干</a></p>
+                        <p class="item-price">¥<span>3652.45</span><a href="javascript:void(0);" class="getBtn"></a></p>
+                    </div>
+                    <!--wg-index-ULike-items-->
+                </div>
+                <!--wg-index-ULike-list-->
+            </div>
+            <!--wg-index-ULike-->
+            <div id="loading-more">
+                别拉了，人家也是有底线的
+            </div>
+            <!--loading-more-->
+
+        </div>
+    </div>
+</section>
+<!--页面公共页底部分-->
+<footer class="public-footer">
+    <div class="footer-content">
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-home.png" class="img-responsive" /></span><p class="label-txt txt-center">首页</p></a>
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-category.png" class="img-responsive" /></span><p class="label-txt txt-center">分类</p></a>
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-main.png" class="img-responsive" /></span><p class="label-txt txt-center">点我赚钱</p></a>
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-cart.png" class="img-responsive" /></span><p class="label-txt txt-center">购物车</p></a>
+        <a href="" class="col-5 p-left"><span class="icon-label"><img src="img/icon-profile-bl.png" class="img-responsive" /></span><p class="label-txt txt-center">个人中心</p></a>
+    </div>
+</footer>
+<!--public-footer-->
+
+<div class="DOM-loadLayer">
+    <div class="rotate-load">
+        <div class="load-box">
+            <div class="load-pane">
+                <div class="load-pane-left"></div>
+                <!--load-pane-left-->
+                <div class="load-pane-right"></div>
+                <!--load-pane-main-->
+            </div>
+            <!--load-pane-->
+        </div>
+        <p class="txt-center">加载中...</p>
+    </div>
+    <!--rotate-load-->
+</div>
+<!--DOM-loadLayer-->
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/TouchScroll.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script src="js/TimeFactory.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    //搜索框焦点事件
+    $(".btn-cancle").on('touchend',function(){
+        outs();
+    });
+
+    $(".search-key").on('touchend',function(){
+        overs();
+    });
+
+    function showInput(){
+        $(".search-box").addClass('activeFocus');
+        $(".wg-index-search").css('paddingRight','1.2rem');
+        $(".btn-cancle").show()
+        $(".search-key").show();
+    }
+
+    function outs() {
+        //判断搜索框内容是否为空
+            if(($(".search-key").val()).trim() == '') {
+                //过滤掉输入的空格
+                $(".search-box").removeClass('activeFocus');
+                $(".search-key").val("");
+                $(".search-key").hide();
+                $(".temp-txt").html("您喜欢的商品");
+                $(".wg-index-search").css('paddingRight','0.2rem');
+                $(".btn-cancle").hide();
+                // $("body").focus();
+            }
+       }
+
+    /*首页主要脚本*/
+    var Myscroll = MySwiper = '',recorder=allTimes= 0,pullTimer = '';
+    function load() {
+        //判断页面内容是否加载完毕
+        if (window.document.readystate) {
+            if (window.document.readystate == 'complete') {//IE
+                //支持当前属性
+                layerState();
+            } else {
+                //TODO
+                layerState();
+            }
+
+        } else {
+            document.addEventListener('DOMContentLoaded',layerState(),false);
+        }
+
+        function layerState() {
+            setTimeout(function () { $(".DOM-loadLayer").css('display', 'none'); }, 500);
+        }
+
+        MySwiper = new Swiper('.swiper-container', {
+            autoplay: 4500,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            pagination: '.swiper-pagination'
+        });
+
+        //执行公共方法
+        publicIndexScroll();
+    }
+
+    function publicIndexScroll(){
+        //页面元素加载完后，最新IOS上下滑动包裹层
+        Myscroll = new IScroll('#scroll-wrapper', {
+            click:true,
+            touchend:true,
+            preventDefaultException: { tagName: /^(INPUT|A|SPAN)$/ }
+        });
+
+        //纪录标记器
+        var recorder = 0;
+        //执行图片懒加载
+        ImgLazyLoad();
+
+        //下拉加载
+        document.addEventListener('touchmove',function(){
+			//清除定时器
+            clearInterval(pullTimer);
+            if(Myscroll.y<85){
+                Myscroll.options.useTransform=false;
+                recorder = Myscroll.y;
+                $('.pull-down').css('height',Myscroll.y+'px');
+            }
+
+        },false);
+
+        function start(){
+			//清除定时器
+            clearInterval(pullTimer);
+            pullTimer =  setInterval(function(){
+                if(recorder <= 0){
+                    clearInterval(pullTimer);
+                    Myscroll.refresh();
+                }
+                $('.pull-down').css('height',(--recorder)+'px');
+            },(Myscroll.options.bounceTime/allTimes));
+        }
+
+        //绑定上下滑动事件
+        Myscroll.on('scrollEnd', function () {
+            allTimes = recorder;
+			//清除定时器
+            clearTimeout(tempTimer);
+            //取消下拉加载
+            var tempTimer = setTimeout(function(){start()},100),maxScroll = Myscroll.maxScrollY+80,
+            //当前滚动方向 1上拉  -1下拉
+            curScrollDirection = Myscroll.directionY,
+            y =Myscroll.y;
+            //console.log(y);
+            if(y<=maxScroll&&curScrollDirection==1){
+                var str='';
+                //开始请求后台数据
+                //TODO
+                //添加节点
+                $('.wg-index-ULike-list').append(str);
+
+            } else if(y>=maxScroll) {
+                //没有满足加载事件
+            }else{
+                //加载完毕 或是
+            }
+            ImgLazyLoad();
+            Myscroll.refresh();
+        });
+
+        //图片懒加载处理
+        function ImgLazyLoad() {
+            $("img").each(function (i, t) {
+                //含有懒加载属性就执行懒加载
+                if ($(t).attr('lazyImg')&&(recorder<=i)) {
+                    //标签含有需要懒加载的图片 执行图片懒加载
+                    if ($(t).offset().top <= (Myscroll.wrapperHeight - Myscroll.y)) {
+                        recorder = i ;
+                        $(t).attr('src', $(t).attr('lazyImg'));
+                    }
+                }
+            });
+        }
+    }
+
+</script>
+</body>
+</html>

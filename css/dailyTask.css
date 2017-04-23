@@ -1,0 +1,166 @@
+@charset "utf-8";
+body {
+    background: #f4f4f4;
+}
+
+#scroll-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0.88rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#scroll-container {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/*每日任务样式*/
+.daily-task-bigImg {
+    width: auto;
+    height: 3rem;
+    background: url("../img/222x222.jpg") #fff center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.daily-task-title {
+    position: relative;
+    padding: 0.16rem 0.2rem;
+    width: auto;
+    height: 0.84rem;
+    font-size: 0.26rem;
+    line-height: 0.52rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.daily-task-title > .daily-task-title-label {
+    margin-left: 0.24rem;
+    color: #333;
+}
+
+.daily-task-title > .daily-task-title-label span em {
+    padding: 0 0.05rem;
+    line-height: 0.52rem
+}
+
+.daily-task-title > .daily-task-title-label span em:nth-child(1) {
+    color: #12a8f4;
+}
+
+.daily-task-title:after {
+    display: block;
+    content: '';
+    width: 0.06rem;
+    height: 0.48rem;
+    background: #12a8f4;
+}
+
+/*信息面板样式*/
+.daily-task-panel {
+    width: auto;
+    height: auto;
+    padding: 0 0.2rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.daily-task-info-btn {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 1.4rem;
+    padding-left: 1.2rem;
+    padding-right: 0.3rem;
+    font-size: 0.32rem;
+    line-height: 1.4rem;
+    color: #333;
+}
+
+.daily-task-info-btn:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: '宋体';
+    text-align: right;
+    font-size: 0.55rem;
+    line-height: 1.4rem;
+    content: '>';
+    color: #aaa;
+
+}
+
+.btn-arrow-rights {
+    color: #aaa;
+    margin-right: 0.15rem;
+}
+
+.icon-label {
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.icon-emails {
+    background: url("../img/icon-emails.png") #fde9cd center center no-repeat;
+    background-size: contain;
+}
+
+.icon-shakes{
+    background: url("../img/icon-shakes.png") #fde9cd center center no-repeat;
+    background-size: contain;
+}
+
+.icon-gifts{
+    background: url("../img/icon-gifts.png") #fde9cd center center no-repeat;
+    background-size: contain;
+}
+
+.icon-infos{
+    background: url("../img/icon-infos.png") #fde9cd center center no-repeat;
+    background-size: contain;
+}
+
+.icon-headers{
+    background: url("../img/icon-headers.png") #fde9cd center center no-repeat;
+    background-size: contain;
+}
+
+.icon-publics{
+    background: url("../img/icon-publics.png") #fde9cd center center no-repeat;
+    background-size: contain;
+}
+
+.icon-APPs{
+    background: url("../img/icon-APPs.png") #fde9cd center center no-repeat;
+    background-size: contain;
+}
+
+

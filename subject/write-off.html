@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script type="text/javascript" src="../js/size.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" href="css/wonder.css" type="text/css" media="screen">
+    <title>核销兑换码</title>
+    <style type="text/css">
+        body{
+            background: #fed000;
+        }
+    </style>
+</head>
+<body onload="WRLoad()">
+<section>
+    <div id="scroll-wrapper">
+        <div id="scroll-container">
+           <div class="write-off-img"><img src="img/write-off-bg.jpg" class="img-responsive" alt=""/></div>
+           <div class="write-off">
+               <form action="" role="form">
+                   <div class="ac-code">
+                       <input type="text" class="ac-frm-input txt-center" placeholder="请输入兑换码" maxlength="11">
+                   </div>
+                   <!--ac-code-->
+                   <a href="javascript:void(0);" class="ac-btn" style="text-indent: -9999px">立即兑换</a>
+               </form>
+           </div>
+            <!--write-off-->
+        </div>
+    </div>
+</section>
+
+<div class="layer-msg">
+    <div class="layer-code write-off-bg ">
+        <a href="javascript:void(0);" class="save-btn txt-center">返回商城首页</a>
+        <a href="javascript:void(0);" class="close-pane"></a>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/TouchScroll.js"></script>
+<script type="text/javascript">
+    function WRLoad() {
+        Myscroll = new IScroll('#scroll-wrapper', {
+            click: true,
+            touchend: true,
+            preventDefault: true,
+            preventDefaultException: {tagName: /^(INPUT|A|SPAN)$/},
+            scrollbars: true,
+            shrinkScrollbars: 'clip'
+        });
+
+        //图片懒加载处理
+        function ImgLazyLoad() {
+            $("img").each(function (i, t) {
+                //含有懒加载属性就执行懒加载
+                if ($(t).attr('lazyImg') && (recorder <= i)) {
+                    //标签含有需要懒加载的图片 执行图片懒加载
+                    if ($(t).offset().top <= (Myscroll.wrapperHeight - Myscroll.y)) {
+                        recorder = i;
+                        $(t).attr('src', $(t).attr('lazyImg'));
+                    }
+                }
+            });
+        }
+
+        $("#top").on('touchend',function(){
+            Myscroll.scrollTo(0,0,300,IScroll.utils.ease.quadratic)
+        });
+
+        $(".ac-btn").on('touchend',function(){
+            $(".layer-msg").show();
+        });
+
+        $(".close-pane").on('touchend',function(){
+            $(".layer-msg").hide();
+        });
+
+    }
+</script>
+</body>
+</html>

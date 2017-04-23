@@ -1,0 +1,805 @@
+@charset "utf-8";
+.purchase-big-pic {
+    margin-bottom: 0.1rem;
+    width: 7.5rem;
+    height: 4.05rem;
+    background: url('../img/222x222.jpg') #fff center center no-repeat;
+}
+
+.purchase-list {
+    padding: 0 0.1rem;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.purchase-list .purchase-items {
+    margin-bottom: 0.1rem;
+    padding: 0.15rem;
+    width: 3.6rem;
+    height: auto;
+    background: #fff;
+}
+
+.purchase-list .marginR10 {
+    margin-right: 0.1rem;
+}
+
+.purchase-items-pic {
+    display: block;
+    width: 3.3rem;
+    height: 3.3rem;
+    overflow: hidden;
+}
+
+.purchase-items-name {
+    margin-top: 0.2rem;
+    display: -webkit-box;
+    display: -moz-box;
+    width: auto;
+    height: 0.504rem;
+    font-size: 0.28rem;
+    line-height: 1.8;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    color: #333;
+}
+
+.purchase-items-otherInfo {
+    position: relative;
+    width: auto;
+    height: 0.96rem;
+}
+
+.purchase-items-otherInfo .otherInfo-left {
+    margin-right: 0.05rem;
+    width: auto;
+    height: auto;
+    font-size: 0.26rem;
+    line-height: 0.96rem;
+    color: #ff602c;
+}
+
+.purchase-items-otherInfo .otherInfo-left > em {
+    font-size: 0.38rem;
+}
+
+.purchase-items-otherInfo .org-price {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.purchase-items-otherInfo .org-price > em {
+    font-size: 0.26rem;
+}
+
+/*立即抢按钮*/
+.purchase-items-otherInfo .purchase-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 0.96rem;
+    height: 0.96rem;
+    background: #ff602c;
+    color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.purchase-items-otherInfo .purchase-btn .purchase-btn-txt {
+    margin-top: 0.22rem;
+    font-size: 0.26rem;
+    line-height: 1;
+}
+
+.purchase-items-otherInfo .purchase-btn .btn-go {
+    margin-top: 0.02rem;
+    font-size: 0.2rem;
+    line-height: 1;
+}
+
+.angle-down {
+    position: absolute;
+    bottom: -0.12rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 0.5rem;
+    line-height: 1;
+}
+
+/*返回顶部样式*/
+.purchase-goTop {
+    display: block;
+    width: auto;
+    height: 0.82rem;
+    font-size: 0.55rem;
+    line-height: 0.55rem;
+    color: #bbb;
+    overflow: hidden;
+}
+
+.purchase-goTop .top-label {
+    font-size: 0.26rem;
+    line-height: 1;
+}
+
+/*分享*/
+.shared-panel {
+    top: 50%;
+    left: 50%;
+    margin-top: -1.75rem;
+    margin-left: -2.65rem;
+    width: 5.3rem;
+    height: 3.5rem;
+    background: #fff;
+    border: 2px solid #ffa632;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
+
+.shared-panel .close-btn {
+    padding: 0.15rem;
+    margin-top: -0.3rem;
+    margin-right: -0.3rem;
+    display: block;
+    width: 0.64rem;
+    height: 0.64rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #ffa632;
+}
+
+.shared-panel .shared-txt {
+    margin: 0.22rem auto;
+    width: 3.24rem;
+    height: 0.32rem;
+}
+
+.shared-panel .sel-shared {
+    position: absolute;
+    top: 1.4rem;
+    left: 50%;
+    margin-left: -1.62rem;
+    width: 3.24rem;
+    height: auto;
+}
+
+.shared-panel .shared-btn {
+    display: block;
+    width: 1.08rem;
+    height: 1.08rem;
+    margin-right: 0.78rem;
+}
+
+.WeChat-icon {
+    background: url("../img/WeChat-icon.png") center center no-repeat;
+    background-size: contain;
+}
+
+.Friends-icon {
+    background: url("../img/Friends-icon.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*一元购收货地址*/
+.purchase-addr-topImg {
+    width: 7.5rem;
+    height: 4.81rem;
+    background: url("../img/222x222.jpg") #fff center center no-repeat;
+    background-size: contain;
+}
+
+.purchase-addr-person {
+    position: relative;
+    width: auto;
+    height: 1.24rem;
+    background: url("../img/purchase-addr-a01.png") center center no-repeat;
+    background-size: contain;
+}
+
+.purchase-addr-mobile {
+    position: relative;
+    width: auto;
+    height: 1.24rem;
+    background: url("../img/purchase-addr-a02.png") center center no-repeat;
+    background-size: contain;
+}
+
+.purchase-addr-area {
+    position: relative;
+    width: auto;
+    height: 1.24rem;
+    background: url("../img/purchase-addr-a03.png") center center no-repeat;
+    background-size: contain;
+}
+
+.purchase-addr-addre {
+    position: relative;
+    width: auto;
+    height: 1.21rem;
+    background: url("../img/purchase-addr-a04.png") center center no-repeat;
+    background-size: contain;
+}
+
+.purchase-addr-sub {
+    position: relative;
+    width: auto;
+    height: 2.32rem;
+    background: url("../img/purchase-addr-a05.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.frm-input-box {
+    padding: 0.2rem 0.47rem;
+    position: absolute;
+    top: 0;
+    width: 5.2rem;
+    height: 0.88rem;
+    background: url("../img/purchase-addr.png") center center no-repeat;
+    background-size: contain;
+}
+
+.frm-btn-sub {
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    display: block;
+    width: 5.2rem;
+    height: 0.88rem;
+    font-size: 0.36rem;
+    line-height: 0.88rem;
+    background: #fd990e;
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 0.88rem;
+    -moz-border-radius: 0.88rem;
+    border-radius: 0.88rem;
+}
+
+.frm-input-box input[type^='text'] {
+    width: 4.26rem;
+    height: 0.48rem;
+    background: transparent;
+}
+
+.box-person {
+    left: 2.03rem;
+}
+
+.box-mobile {
+    left: 1.42rem;
+}
+
+.box-area {
+    left: 1.02rem;
+}
+
+.box-addr {
+    left: 0.73rem;
+}
+
+.frm-label {
+    font-size: 0.3rem;
+    line-height: 0.48rem;
+    color: #333;
+}
+
+/*待付款*/
+.purchase-payment {
+    padding: 0 0.2rem;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.purchase-payment-top {
+    position: relative;
+    padding-left: 0.6rem;
+    width: auto;
+    height: 0.9rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.purchase-payment-top .purchase-payment-items-sel {
+    position: absolute;
+    left: 0;
+    top: 0.27rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 0.88rem;
+    -moz-border-radius: 0.88rem;
+    border-radius: 0.88rem;
+    overflow: hidden;
+}
+
+.active-items-sel {
+    background: url("../img/checked.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.purchase-payment-top .purchase-items-radio {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0.36rem;
+    height: 0.36rem;
+    visibility: hidden;
+}
+
+.purchase-payment-top .shopstore-link {
+    position: relative;
+    padding-left: 0.5rem;
+    padding-right: 0.35rem;
+    display: block;
+    font-size: 0.26rem;
+    line-height: 0.9rem;
+    color: #333;
+}
+
+.purchase-payment-top .shopstore-icon {
+    position: absolute;
+    top: 0.27rem;
+    left: 0;
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url("../img/222x222.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.purchase-payment-top .shopstore-arrow-icon {
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    position: absolute;
+    top: 0.27rem;
+    right: 0;
+    text-align: right;
+    font-size: 0.55rem;
+    line-height: 0.36rem;
+    color: #aaa;
+}
+
+.purchase-payment-top-right {
+    width: auto;
+    height: auto;
+    font-size: 0.26rem;
+    line-height: 0.9rem;
+    color: #ffa632;
+}
+
+.purchase-payment-main {
+    padding: 0.2rem 0;
+    width: auto;
+    height: 2.12rem;
+    display: -webkit-box;
+    display: -moz-box;
+    border-bottom: 1px solid #ddd;
+}
+
+.purchase-payment-main .purchase-payment-main-pic {
+    display: block;
+    width: 1.72rem;
+    height: 1.72rem;
+    background: url("../img/222x222.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.purchase-payment-main .purchase-payment-main-infoPane {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    margin-left: 0.1rem;
+    width: auto;
+    height: 1.72rem;
+}
+
+.purchase-payment-main .main-infoPane {
+    width: auto;
+    height: 0.72rem;
+    margin-bottom: 0.3rem;
+}
+
+.purchase-payment-main .main-infoPane-left {
+    display: block;
+    width: 4rem;
+    height: 0.72rem;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    color: #333;
+}
+
+.purchase-payment-main .main-infoPane-right {
+    display: block;
+    width: auto;
+    height: 0.72rem;
+    text-align: right;
+}
+
+.purchase-payment-main .now-price {
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    color: #333;
+}
+
+.purchase-payment-main .org-price {
+    font-size: 0.22rem;
+    line-height: 0.36rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.purchase-payment-main .main-otherInfo {
+    width: auto;
+    height: 0.31rem;
+    font-size: 0.24rem;
+    line-height: 0.31rem;
+    color: #999;
+}
+
+.purchase-payment-main .otherInfo-left {
+    display: block;
+    width: 4rem;
+    height: 0.31rem;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.purchase-payment-bottom {
+    width: auto;
+    height: 1.6rem;
+    overflow: hidden;
+}
+
+.purchase-payment-bottom .btm-label {
+    width: auto;
+    height: 0.75rem;
+    font-size: 0.24rem;
+    line-height: 0.75rem;
+    text-align: right;
+    color: #333;
+}
+
+.purchase-payment-bottom .btm-btn {
+    width: auto;
+    height: auto;
+    font-size: 0.24rem;
+    line-height: 0.54rem;
+}
+
+.purchase-payment-bottom .btn-payment {
+    display: block;
+    width: 1.58rem;
+    height: 0.58rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    text-align: center;
+    margin-left: 0.1rem;
+}
+
+.purchase-payment-bottom .btm-btn-cancle {
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.purchase-payment-bottom .btm-btn-pay {
+    border: 1px solid #ffa632;
+    color: #ffa632;
+}
+
+/*底部删除样式*/
+.footer-label {
+    width: auto;
+    height: 0.98rem;
+    font-size: 0.3rem;
+    line-height: 0.98rem;
+    color: #666;
+}
+
+.footer-label > em {
+    font-size: 0.28rem;
+    line-height: 0.98rem;
+    color: #ffa632;
+}
+
+.footer-label > em > i {
+    font-style: normal;
+    font-size: 0.36rem;
+}
+
+.pay-all-btn {
+    display: block;
+    width: 2.68rem;
+    height: 0.98rem;
+    font-size: 0.32rem;
+    line-height: 0.98rem;
+    background: #ffa632;
+    color: #fff;
+}
+
+/*一元购支付方式样式*/
+.purchase-order-money {
+    padding: 0 0.2rem;
+    width: auto;
+    height: 0.8rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-left-label {
+    display: block;
+    width: auto;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    line-height: 0.8rem;
+    color: #333;
+}
+
+.order-right-amount {
+    width: auto;
+    height: auto;
+    font-size: 0.3rem;
+    line-height: 0.8rem;
+    color: #333;
+}
+
+.order-right-amount > em {
+    font-size: 0.42rem;
+}
+
+/*选择支付方式*/
+.order-payment-method {
+    padding: 0 0.2rem;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.order-payment-method-items {
+    position: relative;
+    padding: 0 0.46rem 0 0.9rem;
+    width: auto;
+    height: 1.2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.payment-items-left-icon {
+    position: absolute;
+    left: 0;
+    top: 0.26rem;
+    display: block;
+    width: 0.68rem;
+    height: 0.68rem;
+}
+
+.payment-sel-radio {
+    position: absolute;
+    top: 0.37rem;
+    right: 0;
+    display: block;
+    width: 0.46rem;
+    height: 0.46rem;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.sel-active .payment-sel-radio {
+    background: url("../img/checked.jpg") center center no-repeat;
+    background-size: contain;
+}
+
+.payment-sel-radio input[type^='radio'] {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 0.46rem;
+    height: 0.46rem;
+    visibility: hidden;
+}
+
+.we-pay-icon {
+    background: url("../img/we-pay.png") center center no-repeat;
+    background-size: contain;
+}
+
+.bank-pay-icon {
+    background: url("../img/bank-pay.png") center center no-repeat;
+    background-size: contain;
+}
+
+.pay-ways-hidden-panel {
+    width: auto;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.panel-active {
+    -webkit-animation: Demo302 .3s ease 0s 1 forwards;
+    -moz-animation: Demo302 .3s ease 0s 1 forwards;
+    -o-animation: Demo302 .3s ease 0s 1 forwards;
+    animation: Demo302 .3s ease 0s 1 forwards;
+}
+
+@keyframes Demo302 {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes Demo302 {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes Demo302 {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes Demo302 {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes Demo302 {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+.show-hide-btn {
+    width: auto;
+    height: 0.88rem;
+    font-size: 0.3rem;
+    line-height: 0.88rem;
+    text-align: center;
+    color: #999;
+    border-bottom: 1px solid #ddd;
+}
+
+.show-hide-btn > i {
+    position: relative;
+    padding-left: 0.15rem;
+}
+
+.show-hide-btn .icon-active::before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.payment-items-content {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.payment-title {
+    margin-top: 0.27rem;
+    width: auto;
+    height: 0.32rem;
+    font-size: 0.32rem;
+    line-height: 1;
+    color: #333;
+}
+
+.payment-intro {
+    margin-top: 0.15rem;
+    width: auto;
+    height: auto;
+    font-size: 0.2rem;
+    line-height: 1;
+    color: #999;
+}
+
+/*确认支付*/
+.pay-confrm {
+    margin: 0.6rem auto;
+    display: block;
+    width: 7.1rem;
+    height: 0.88rem;
+    font-size: 0.32rem;
+    line-height: 0.88rem;
+    color: #fff;
+    background: #ff9503;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
+
+.novice-packs {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.34rem;
+    margin-top: -3.925rem;
+    width: 6.68rem;
+    height: 7.85rem;
+    background: url("../img/novice-packs.png") center center no-repeat;
+    background-size: contain;
+}
+
+.novice-packs .get-gift {
+    position: absolute;
+    bottom: 0.9rem;
+    left:2.14rem;
+    display: block;
+    width: 2.26rem;
+    height: 0.62rem;
+    -webkit-border-radius: 0.62rem;
+    -moz-border-radius: 0.62rem;
+    border-radius: 0.62rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

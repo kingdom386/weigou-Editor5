@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/lucky-draw.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/sigin.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/shake.css" media="screen" />
+    <title>摇一摇</title>
+</head>
+<body onload="publicScroll()">
+<!--公共头部  微信头部不要加 app头部要加-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">微购一站</h2>
+        <a href="" class="btn btn-shared"></a>
+    </div>
+</header>
+<!--内容包裹层-->
+<section>
+    <div id="scroll-wrapper">
+        <div id="scroll-container">
+            <!--摇一摇头部-->
+            <div class="s-k-top">
+                <span class="s-k-label-left p-left s-k-label"><i class="s-k-left-badge"></i>摇一摇 赚微币</span>
+                <span class="s-k-label-right p-right s-k-label">规则<i class="s-k-right-badge"></i></span>
+            </div>
+            <!--日历-->
+            <div class="s-k-calendar">
+                <div class="s-k-calendar-txt">
+                    <p class="txt-center s-k-month">01月</p>
+                    <label class="txt-center s-k-labels">日历</label>
+                </div>
+                <!--s-k-calendar-txt-->
+                <div class="calendar-panel swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--!!!!!!!!!!!!!!!!闲置div 不可删除 !!!!!!!!!!!!!!!!-->
+                        <div class="swiper-slide">
+                            <p class="txt-center"></p>
+                            <p class="txt-center txt-333"></p>
+                        </div>
+                        <!--!!!!!!!!!!!!!!!!闲置div 不可删除 !!!!!!!!!!!!!!!!-->
+                        <div class="swiper-slide">
+                            <p class="txt-center">日</p>
+                            <p class="txt-center txt-333"><i class="s-k-c-box"></i>1</p>
+                        </div>
+                        <!--swiper-slide-->
+                        <div class="swiper-slide">
+                            <p class="txt-center">一</p>
+                            <p class="txt-center txt-333"><i class="s-k-OK"></i>2</p>
+                        </div>
+                        <!--swiper-slide-->
+                        <div class="swiper-slide">
+                            <p class="txt-center">二</p>
+                            <p class="txt-center txt-333">3</p>
+                        </div>
+                        <!--swiper-slide-->
+                    </div>
+                </div>
+            </div>
+            <!--s-k-calendar-->
+            <!--摇一摇动画-->
+            <div class="s-k-animation">
+                <span class="s-k-counts txt-center">今日还有<em id="shakeCounts">7</em>次摇一摇机会</span>
+                <div class="s-k-02">
+                    <span class="s-k-hand"></span>
+                    <!--s-k-hand-->
+                </div>
+                <!--s-k-02-->
+                <div class="s-k-03">
+                </div>
+                <!--s-k-03-->
+            </div>
+            <!--s-k-animation-->
+
+            <div class="s-k-other">
+                <a href="" class="s-k-other-way">
+                     <i class="s-k-icon">
+                         <img src="" class="img-responsive" />
+                     </i>
+                     <h3>微币商城</h3>
+                     <p>超值好礼兑不停</p>
+                     <i class="arrow-icon icon-angle-right"></i>
+                </a>
+                <!--s-k-other-way-->
+
+                <a href="" class="s-k-other-way">
+                    <i class="s-k-icon">
+                        <img src="" class="img-responsive" />
+                    </i>
+                    <h3>微币商城</h3>
+                    <p>超值好礼兑不停</p>
+                    <i class="arrow-icon icon-angle-right"></i>
+                </a>
+                <!--s-k-other-way-->
+            </div>
+            <!--s-k-other-->
+         </div>
+    </div>
+</section>
+
+<div class="layer-msg">
+    <!--摇一摇规则-->
+    <div class="layer-regular">
+        <a href="javascript:void(0);" class="close-btn"></a>
+        <span class="silk-orange txt-center">摇一摇规则</span>
+        <div class="main-content">
+            <p><i class="txt-center">1</i> 参与资格:微购一站所有注册用户；</p>
+            <p><i class="txt-center">2</i> 活动奖品为微币、红包、优惠券等，活动会有变动，以实际摇出为准；</p>
+            <p><i class="txt-center">3</i> 以不正当手段参与本次活动的用户，微购一站有权终止其参与活动，取消其获奖资格；</p>
+            <p><i class="txt-center">4</i> 活动奖品由微购一站承担，如有任何问题，请联系微购一站客服。</p>
+            <a href="javascript:void(0);" class="regular-btn regular-btn-orange">我知道了</a>
+        </div>
+    </div>
+    <!--layer-regular-->
+    <!--摇一摇中奖-->
+    <div class="draw-winning" >
+        <!--喜中红包一个 内容框-->
+       <div class="getRedPacket" style="display: none;">
+           <a href="javascript:void(0);" class="close-btn"></a>
+           <span class="duck-egg-img"><img src="img/redpacket-money.png" class="img-responsive" alt="老鸭蛋" /></span>
+           <p class="duck-egg-what txt-center txt-orange">恭喜您</p>
+           <p class="duck-egg-what txt-center">获得微购一站大红包一个</p>
+           <div class="get-coupons">
+               <span class="winning-bg txt-center txt-orange">34微币</span>
+           </div>
+           <a href="" class="w-btn txt-center">查看我的微币</a>
+       </div>
+       <!--getRedPacket-->
+        <!--喜中限时抢购-->
+        <div class="getFlashSale"  style="display: none;" >
+            <a href="javascript:void(0);" class="close-btn"></a>
+            <span class="silk-orange txt-center">限时抢购</span>
+            <div class="s-k-FlashSale-items">
+               <span class="FalshSale-item">
+                    <img src="img/getFlashItem.jpg" class="img-responsive" alt="限时抢购" />
+               </span>
+                <!--FalshSale-item-->
+               <p class="f-items-name">儿童袜子纯棉冬季加厚保暖中大童彩色条儿童袜子纯棉冬季加厚保暖中大童彩色条</p>
+                <!--f-items-name-->
+               <p class="f-items-info">
+                   <span class="f-items-price p-left">¥<em>56</em></span>
+                   <span class="f-items-rest p-right">还剩3000件</span>
+               </p>
+                <!--f-items-info-->
+            </div>
+            <!--s-k-FlashSale-items-->
+            <a href="" class="f-items-btn positionAbsolute">立即抢购</a>
+            <!--f-items-btn-->
+        </div>
+        <!--getFlashSale-->
+        <!--喜中优惠券-->
+        <div class="getCoupons" style="display: none;">
+            <a href="javascript:void(0);" class="close-btn"></a>
+            <span class="duck-egg-img"><img src="img/redpacket-money.png" class="img-responsive" alt="老鸭蛋" /></span>
+            <p class="duck-egg-what txt-center txt-orange">恭喜您</p>
+            <p class="duck-egg-what txt-center">获得一张微购一站优惠券</p>
+            <div class="get-coupons">
+                <span class="coupons-bg txt-center">¥<em>1</em></span>
+            </div>
+            <a href="" class="c-btn c-check txt-center">查看</a>
+            <a href="" class="c-btn c-use txt-center">去使用</a>
+        </div>
+        <!--邀请好友-->
+        <div class="InviteFriends" style="display: none;">
+            <a href="javascript:void(0);" class="close-btn"></a>
+            <span class="silk-orange txt-center">邀请好友</span>
+            <div class="invite-friends">
+                <div class="invite-rea-package"><img src="img/invite-friends.png" class="img-responsive" alt="邀请好友红包"  /></div>
+            </div>
+            <!--invite-friends-->
+            <a href="" class="f-items-btn positionAbsolute">立即邀请好友</a>
+            <!--f-items-btn-->
+        </div>
+        <!--立即抽奖-->
+        <div class="LuckyDraw" style="display: none;">
+            <a href="javascript:void(0);" class="close-btn"></a>
+            <span class="silk-orange txt-center">立即抽奖</span>
+            <div class="invite-friends">
+                <div class="invite-rea-package"><img src="img/circle-round.png" class="img-responsive" alt="立即抽奖"  /></div>
+            </div>
+            <!--invite-friends-->
+            <a href="" class="f-items-btn positionAbsolute">立即去抽奖</a>
+        </div>
+        <!--LuckyDraw-->
+    </div>
+    <!-- draw-winning -->
+    <!--连续7天摇一摇获得微币-->
+    <div class="Seven-day-sign">
+        <a href="javascript:void(0);" class="close-btn"></a>
+        <span class="duck-egg-img"><img src="img/Seven-day-WB.jpg" class="img-responsive" alt="老鸭蛋" /></span>
+        <p class="seven-day-txt">连续7天摇一摇可以获得微币奖励，奖励第七天发放哟！</p>
+        <a href="" class="f-seven-day txt-center ">确定</a>
+
+    </div>
+    <!--Seven-day-sign-->
+</div>
+<!--layer-msg-->
+
+<script src="js/size.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/TouchScroll.js"></script>
+<script src="js/LazyImgLoad.js" type="text/javascript"></script>
+<script src="js/zepto.min.js" type="text/javascript"></script>
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var MySwiper = new Swiper('.calendar-panel',{
+        direction:"horizontal",
+        slidesPerView:8,
+        freeMode:true,
+        freeModeMomentum:true,
+        freeModeMomentumRatio:5 //滑动动量
+    });
+
+    $(".s-k-label-right").on('touchend',function(){
+        $(".layer-msg").show();
+        $(".layer-regular").show();
+        $(".draw-winning").hide();
+        $(".Seven-day-sign").hide();
+        flag = false;
+
+    })
+
+    //关闭遮罩层
+    $(".close-btn").on('touchend',close);
+    $(".regular-btn-orange").on('touchend',close);
+
+    function close(){
+        flag = true;
+        $(".layer-msg").hide();
+        $(".layer-regular").hide();
+        $(".draw-winning").hide();
+        $(".getRedPacket").hide();
+        $(".getFlashSale").hide();
+        $(".getCoupons").hide();
+        $(".InviteFriends").hide();
+        $(".LuckyDraw").hide();
+    }
+
+    //摇一摇事件
+    var shakeSpeed = 1850;
+    var LastTime = 0;
+    var flag = true;
+    var x = y = z = lastX = lastY = lastZ = 0;
+
+    if(window.DeviceMotionEvent){
+        //alert("您的手机支持devicemotion事件");
+        window.addEventListener('devicemotion',deviceMontionFunc,false);
+    }else{
+        // alert("您的手机不支持devicemotion事件");
+    }
+
+    function deviceMontionFunc(evData){
+        var acceleration = evData.accelerationIncludingGravity;
+        var curTime = new Date().getTime();
+
+        if ((curTime - LastTime) > 100) {
+            var BwTime = curTime - LastTime;
+            LastTime = curTime;
+            //当前摇一摇三维位置
+            x = acceleration.x;
+            y = acceleration.y;
+            z = acceleration.z;
+
+            var speed = Math.abs((x + y + z) - (lastX + lastY + lastZ)) / BwTime * 10000;
+            if (speed > shakeSpeed) {
+                //摇一摇需要执行的动作 用户摇动事件 执行摇一摇事件
+                if(flag){
+                    flag=false;
+                    $(".s-k-hand").addClass("active-s-k");
+                    setTimeout(
+                            function(){
+                                var temp = $("#shakeCounts").html();
+                                if(parseInt(temp)>0){
+                                    //根据业务逻辑显示对应的弹出层
+                                    $("#shakeCounts").html(--temp);
+                                    //显示遮罩层
+                                    $(".layer-msg").show();
+                                    //隐藏其他遮罩层
+                                    $(".layer-regular").hide();
+                                    $(".draw-winning").show();
+                                    var i =3;
+                                    if(i == 0){
+                                       $(".getRedPacket").show();
+                                    }
+
+                                    if(i == 1){
+                                        $(".getFlashSale").show();
+                                    }
+
+                                    if(i == 2){
+                                        $(".getCoupons").show();
+                                    }
+
+                                    if(i == 3){
+                                        $(".InviteFriends").show();
+                                    }
+
+                                    if(i == 4){
+                                        $(".LuckyDraw").show();
+                                    }
+
+                                }else{
+                                   //console.log("你的摇一摇次数已用完")
+                                    alert("GAME OVER !!!");
+                                }
+                                //具体业务逻辑
+                                $(".s-k-hand").removeClass("active-s-k");
+                               // flag=true;
+                    },1200);
+                }
+
+            }
+            //记录三维空间位置
+            lastX = x;
+            lastY = y;
+            lastZ = z;
+        }
+
+    }
+
+</script>
+</body>
+</html>

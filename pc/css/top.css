@@ -1,0 +1,433 @@
+@charset "utf-8";
+.content-wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+.header {
+    width: auto;
+    height: 354px;
+}
+
+.top-info {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.prize-items {
+    position: relative;
+    margin: 0 auto;
+    width: 1160px;
+    height: 290px;
+    overflow: hidden;
+}
+
+.portrait-box{
+    position: absolute;
+    top: 32px;
+    left: 40px;
+    width:675px;
+}
+
+.portrait {
+    position: absolute;
+    top:0;
+    left: 0%;
+    width: 117px;
+    height: 140px;
+    background: url("../img/portrait-bg.png") center center no-repeat;
+    background-size: contain;
+}
+
+.champion-txt {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 117px;
+    width: 200px;
+    height: 68px;
+    opacity: 0;
+}
+
+.come-on {
+    background: url("../img/come-on-left.png") center center no-repeat;
+    background-size: contain;
+}
+
+.come-on-left{
+    background: url("../img/come-on-right.png") center center no-repeat;
+    background-size: contain;
+}
+
+.will-be-soon {
+    background: url("../img/will-be-soon.png") center center no-repeat;
+    background-size: contain;
+}
+
+.will-be-soon-right {
+    background: url("../img/will-be-soon-right.png") center center no-repeat;
+    background-size: contain;
+}
+
+.cheer-up {
+    background: url("../img/cheer-up.png") center center no-repeat;
+    background-size: contain;
+}
+
+.cheer-up-right {
+    background: url("../img/cheer-up-right.png") center center no-repeat;
+    background-size: contain;
+}
+
+.portrait .portrait-img {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+    -ms-box-sizing: border-box;
+    display: block;
+    padding: 4px 4px;
+    width: 109px;
+    height: 109px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.portrait .portrait-img > img {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+/*精英姓名*/
+.user-name {
+    position: absolute;
+    bottom: 11px;
+    display: block;
+    width: 117px;
+    height: 26px;
+    background: #ea0e1d;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+.user-name em {
+    margin-left: 10px;
+}
+
+/*进度条样式*/
+.progress-bar {
+    position: absolute;
+    z-index: 5;
+    left: 99px;
+    bottom: 75px;
+    width: 689px;
+    height: 43px;
+    overflow: hidden;
+}
+
+.progress-gray {
+    display: block;
+    width: auto;
+    height: 43px;
+    overflow: hidden;
+    background: #dedede;
+}
+
+.progress-orange {
+    position: absolute;
+    top: 0;
+    z-index: 6;
+    width: 0%;
+    height: 43px;
+    -webkit-border-radius: 43px;
+    -moz-border-radius: 43px;
+    border-radius: 43px;
+    background: #ea0e1d;
+}
+
+.progress-bar-txt {
+    position: absolute;
+    z-index: 7;
+    right: 25px;
+    bottom: 0;
+    font-size: 26px;
+    line-height: 44px;
+    color: #fff;
+}
+
+/*头衔图标*/
+.price-icon {
+    position: absolute;
+    z-index: 8;
+    left: 0;
+    bottom: 5px;
+    display: block;
+    width: 114px;
+    height: 160px;
+}
+
+/*奖项设置*/
+.prize-lable {
+    position: absolute;
+    z-index: 10;
+    right: 4px;
+    bottom: 75px;
+    width: 385px;
+    height: 99px;
+}
+
+.prize-car {
+    position: absolute;
+    right: -500px;
+    bottom: 0;
+    z-index: 12;
+    display: block;
+    width: 196px;
+    height: 111px;
+    overflow: hidden;
+    -webkit-animation: DemoCar 1s .8s ease 1 forwards;
+    -moz-animation: DemoCar 1s .8s ease 1 forwards;
+    -o-animation: DemoCar 1s .8s ease 1 forwards;
+    -ms-animation: DemoCar 1s .8s ease 1 forwards;
+    animation: DemoCar 1s .8s ease 1 forwards;
+}
+
+.car-audi {
+    background: url("../img/20.png") center center no-repeat;
+    background-size: contain;
+}
+
+.car-benzi {
+    background: url("../img/15w.png") center center no-repeat;
+    background-size: contain;
+}
+
+.car-bmw {
+    background: url("../img/12w.png") center center no-repeat;
+    background-size: contain;
+}
+
+.prize-lable-champion {
+    background: url("../img/champion-lable.png") left bottom no-repeat;
+}
+
+.prize-lable-runnerUp {
+    background: url("../img/Runner-up-lable.png") left bottom no-repeat;
+}
+
+.prize-lable-third {
+    background: url("../img/third-lable.png") left bottom no-repeat;
+}
+
+.icon-champion {
+    background: url("../img/Champion.png") center center no-repeat;
+    background-size: contain;
+}
+
+.icon-Runner-up {
+    background: url("../img/Runner-up.png") center center no-repeat;
+    background-size: contain;
+}
+
+.icon-Third {
+    background: url("../img/Third.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*精英10强*/
+.top-10 {
+    position: relative;
+    margin: 158px auto 0;
+    width: 1154px;
+    height: 117px;
+    border-left: 2px solid #f4a97b;
+    border-right: 2px solid #f4a97b;
+}
+
+.top-10-biimg {
+    position: absolute;
+    z-index: 14;
+    left: 50%;
+    bottom: 42px;
+    width: 805px;
+    height: 222px;
+    background: url("../img/top-10-img.png") center center no-repeat;
+    background-size: contain;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/*表格标题*/
+.tab-title {
+    position: absolute;
+    z-index: 15;
+    left: 0;
+    bottom: 10px;
+    width: 1154px;
+    height: 30px;
+}
+
+.tab-title > span {
+    float: left;
+    display: inline-block;
+    height: 30px;
+    font-size: 23px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.w-100 {
+    width: 100px;
+}
+
+.w-180 {
+    width: 180px;
+}
+
+.w-165 {
+    width: 165px;
+}
+
+.w-258 {
+    width: 258px;
+}
+
+.w-445 {
+    width: 445px;
+}
+
+.top-list {
+    margin: 0 auto 50px;
+    width: 1154px;
+    height: auto;
+    overflow: hidden;
+    border-left: 2px solid #f4a97b;
+    border-right: 2px solid #f4a97b;
+    border-bottom: 2px solid #f4a97b;
+}
+
+.top-10-box li{
+    width:auto;
+    height:60px;
+    overflow: hidden;
+}
+
+.top-10-box li.active{
+    background: #fef4e5;
+}
+
+.top-list .items {
+    position: relative;
+    display: block;
+    height: 60px;
+    float: left;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-champion {
+    display: block;
+    margin: 3px auto;
+    width: 38px;
+    height: 53px;
+}
+
+.txt-orange {
+    color: #f39620;
+}
+
+.txt-888 {
+    color: #888;
+}
+
+.items-prog {
+    padding: 16px 28px 0 28px;
+}
+
+.items-prog-bar {
+    margin-top:5px;
+    position: relative;
+    display: block;
+    width:325px;
+    height:23px;
+}
+
+
+
+.progress-bar-gray{
+    display: block;
+    width:auto;
+    height:23px;
+    background-color: #dedede;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+}
+
+.progress-bar-orange{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 22;
+    display: block;
+    width:5%;
+    height:23px;
+    background-color: #f9a428;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+}
+
+.progress-txt{
+    position: absolute;
+    z-index: 22;
+    top:0;
+    right:5px;
+    font-size:16px;
+    line-height:23px;
+    color: #fff;
+}
+
+.amate{
+
+    line-height: 32px;
+}
+
+
+/*css3 动画  汽车动画*/
+@-webkit-keyframes DemoCar{
+    from{right: -200px}to{right:0;}
+}
+
+@-moz-keyframes DemoCar{
+    from{right: -200px}to{right:0;}
+}
+
+@-o-keyframes DemoCar {
+    from{right: -200px}to{right:0;}
+}
+
+@-ms-keyframes DemoCar {
+    from{right: -200px}to{right:0;}
+}
+
+/*进度条动画 css3*/
+
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" href="css/clear.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/purchase.css" type="text/css" media="screen">
+    <title>一元购</title>
+</head>
+<body onload="purchaseLoad()">
+<!--公共头部  微信头部不要加 app头部要加样式需要根据实际情况进行修改且样式均为统一-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+        <h2 class="wg-header-txt txt-center">一元购</h2>
+        <a href="javascript:void(0);" class="btn btn-shared"></a>
+    </div>
+</header>
+<!--整体内容滑动-->
+<section>
+    <div id="scroll-wrapper">
+        <div id="scroll-container">
+            <!--一元购大图背景-->
+            <div class="purchase-big-pic">
+                <img class="img-responsive" lazyImg="img/purchase-bg.jpg"/>
+            </div>
+            <!--purchase-big-pic-->
+            <!--一元购内容列表-->
+            <div class="purchase-list">
+                <div class="purchase-items p-left marginR10">
+                    <span class="purchase-items-pic">
+                        <img lazyImg="img/fruits-01.jpg" class="img-responsive" alt=""/>
+                    </span>
+                    <p class="purchase-items-name">新疆特产核桃夹红枣新疆特产核桃夹红枣</p>
+                    <div class="purchase-items-otherInfo">
+                        <span class="otherInfo-left p-left">¥<em>526.52</em></span>
+                        <span class="otherInfo-left org-price p-left">¥<em>450</em></span>
+                        <a href="javascript:void(0);" class="purchase-btn">
+                            <p class="txt-center purchase-btn-txt">立即抢</p>
+                            <p class="btn-go txt-center">GO</p>
+                            <p class="angle-down icon-angle-down"></p>
+                        </a>
+                    </div>
+                </div>
+                <!--purchase-items-->
+
+                <div class="purchase-items p-left">
+                    <span class="purchase-items-pic">
+                        <img lazyImg="img/fruits-02.jpg" class="img-responsive" alt=""/>
+                    </span>
+                    <p class="purchase-items-name">新疆特产核桃夹红枣新疆特产核桃夹红枣</p>
+                    <div class="purchase-items-otherInfo">
+                        <span class="otherInfo-left p-left">¥<em>526.52</em></span>
+                        <span class="otherInfo-left org-price p-left">¥<em>450</em></span>
+                        <a href="javascript:void(0);" class="purchase-btn">
+                            <p class="txt-center purchase-btn-txt">立即抢</p>
+                            <p class="btn-go txt-center">GO</p>
+                            <p class="angle-down icon-angle-down"></p>
+                        </a>
+                    </div>
+                </div>
+                <!--purchase-items-->
+
+                <div class="purchase-items p-left marginR10">
+                    <span class="purchase-items-pic">
+                        <img lazyImg="img/fruits-01.jpg" class="img-responsive" alt=""/>
+                    </span>
+                    <p class="purchase-items-name">新疆特产核桃夹红枣新疆特产核桃夹红枣</p>
+                    <div class="purchase-items-otherInfo">
+                        <span class="otherInfo-left p-left">¥<em>526.52</em></span>
+                        <span class="otherInfo-left org-price p-left">¥<em>450</em></span>
+                        <a href="javascript:void(0);" class="purchase-btn">
+                            <p class="txt-center purchase-btn-txt">立即抢</p>
+                            <p class="btn-go txt-center">GO</p>
+                            <p class="angle-down icon-angle-down"></p>
+                        </a>
+                    </div>
+                </div>
+                <!--purchase-items-->
+
+                <div class="purchase-items p-left">
+                    <span class="purchase-items-pic">
+                        <img lazyImg="img/fruits-02.jpg" class="img-responsive" alt=""/>
+                    </span>
+                    <p class="purchase-items-name">新疆特产核桃夹红枣新疆特产核桃夹红枣</p>
+                    <div class="purchase-items-otherInfo">
+                        <span class="otherInfo-left p-left">¥<em>526.52</em></span>
+                        <span class="otherInfo-left org-price p-left">¥<em>450</em></span>
+                        <a href="javascript:void(0);" class="purchase-btn">
+                            <p class="txt-center purchase-btn-txt">立即抢</p>
+                            <p class="btn-go txt-center">GO</p>
+                            <p class="angle-down icon-angle-down"></p>
+                        </a>
+                    </div>
+                </div>
+                <!--purchase-items-->
+
+            </div>
+            <!--purchase-list-->
+
+            <!--返回顶部-->
+            <a href="javascript:void(0);" class="purchase-goTop txt-center">
+                <p class="icon-caret-up"></p>
+                <p class="top-label">返回顶部</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="layer-msg">
+    <!--分享面板-->
+    <div class="shared-panel positionFixed">
+        <a href="javascript:void(0);" class="close-btn p-right"><img src="img/close-wt.png" class="img-responsive"
+                                                                     alt=""></a>
+        <div class="shared-txt"><img src="img/shared-txt.jpg" class="img-responsive" alt=""/></div>
+        <div class="sel-shared">
+            <a href="" class="shared-btn p-left WeChat-icon"></a>
+            <a href="" class="shared-btn p-left Friends-icon marginRInit"></a>
+        </div>
+        <!--sel-shared-->
+    </div>
+    <!--shared-panel-->
+</div>
+
+<div class="layer-msg" style="display: block;">
+    <!--新手礼包-->
+    <div class="novice-packs">
+      <!--领取礼包按钮定位-->
+        <a href="" class="get-gift"></a>
+    </div>
+    <!--novice-packs-->
+</div>
+
+
+<script src="js/size.js" type="text/javascript"></script>
+<script src="js/zepto.min.js" type="text/javascript"></script>
+<script src="js/TouchScroll.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var myScroll = '';
+    function purchaseLoad() {
+        //页面元素加载完后，最新IOS上下滑动包裹层
+        Myscroll = new IScroll('#scroll-wrapper', {
+            click: true,
+            touchend: true,
+            preventDefaultException: {tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A|SPAN)$/},
+            deceleration: 0.0006,
+            bindToWrapper: true,
+            scrollbars: true,
+            fadeScrollbars: true,
+            shrinkScrollbars: 'scale'
+        });
+
+        //执行图片懒加载
+        ImgLazyLoad();
+
+        //绑定上下滑动事件
+        Myscroll.on('scrollEnd', function () {
+            //滑屏结束执行图片懒加载
+            //TODO
+            Myscroll.refresh();
+            ImgLazyLoad();
+        });
+
+        //分享
+        $(".btn-shared").on('touchend', function () {
+            $(".layer-msg").show();
+        });
+
+        //关闭遮罩层
+        $(".close-btn").on('touchend', function () {
+            $(".layer-msg").hide();
+        });
+
+        //返回顶部
+        $(".purchase-goTop").on('touchend', function () {
+            Myscroll.scrollTo(0, 0, 200, IScroll.utils.ease.quadratic);
+        });
+
+        //图片懒加载处理
+        function ImgLazyLoad() {
+            $("img").each(function (i, t) {
+                //含有懒加载属性就执行懒加载
+                if ($(t).attr('lazyImg')) {
+                    //标签含有需要懒加载的图片 执行图片懒加载
+                    if ($(t).offset().top <= (Myscroll.wrapperHeight - Myscroll.y)) {
+                        $(t).attr('src', $(t).attr('lazyImg'));
+                    }
+                }
+            });
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

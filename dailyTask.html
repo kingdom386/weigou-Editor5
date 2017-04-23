@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/dailyTask.css" media="screen"/>
+    <title>每日任务</title>
+</head>
+<body onload="publicScroll()">
+<!--公共头部  微信头部不要加 app头部要加-->
+<header>
+    <div class="wg-header">
+        <a href="" class="btn menu-icon-btn icon-angle-left"></a>
+
+        <h2 class="wg-header-txt txt-center">微购一站</h2>
+        <a href="" class="btn btn-shared"></a>
+    </div>
+</header>
+<!--内容上下滑动层-->
+<div id="scroll-wrapper">
+    <div id="scroll-container">
+        <!--每日任务背景大图-->
+        <div class="daily-task-bigImg">
+            <img lazyImg="images/dailyTaskImg.jpg" class="img-responsive"/>
+        </div>
+        <!--daily-task-bigImg-->
+        <div class="daily-task-title">
+            <div class="p-left daily-task-title-label">每日任务<span><em>0</em>/<em>45</em></span></div>
+        </div>
+        <!--daily-task-title-->
+        <div class="daily-task-panel marginB20">
+            <a href="" class="daily-task-info-btn"><i class="icon-label icon-emails"></i>邀请好友<span
+                    class="btn-arrow-rights p-right">最少省<em>15</em>元</span></a>
+            <a href="" class="daily-task-info-btn"><i class="icon-label icon-shakes"></i>摇一摇<span
+                    class="btn-arrow-rights p-right">每天赚微币</span></a>
+            <a href="" class="daily-task-info-btn"><i class="icon-label icon-gifts"></i>幸运抽奖<span
+                    class="btn-arrow-rights p-right">赢现金券、微币等</span></a>
+        </div>
+        <!--daily-task-panel-->
+        <div class="daily-task-title">
+            <div class="p-left daily-task-title-label">新人任务<span><em>0</em>/<em>45</em></span></div>
+        </div>
+        <!--daily-task-title-->
+        <div class="daily-task-panel">
+            <a href="" class="daily-task-info-btn"><i class="icon-label icon-infos"></i>完善个人资料<span
+                    class="btn-arrow-rights p-right">+3微币</span></a>
+            <a href="" class="daily-task-info-btn"><i class="icon-label icon-headers"></i>上传头像<span
+                    class="btn-arrow-rights p-right">+3微币</span></a>
+            <a href="" class="daily-task-info-btn"><i class="icon-label icon-publics"></i>关注微信公众号<span
+                    class="btn-arrow-rights p-right">得无门槛现金券</span></a>
+            <a href="" class="daily-task-info-btn"><i class="icon-label icon-APPs"></i>下载微购一站APP<span
+                    class="btn-arrow-rights p-right">得无门槛现金券</span></a>
+        </div>
+        <!--daily-task-panel-->
+    </div>
+    <!--wrapper-wrapper-->
+</div>
+<!--wrapper-containner-->
+
+<script type="text/javascript" src="js/size.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/TouchScroll.js"></script>
+<script type="text/javascript" src="js/LazyImgLoad.js"></script>
+</body>
+</html>

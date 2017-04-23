@@ -1,0 +1,465 @@
+@charset "utf-8";
+body {
+    background: #fff;
+}
+
+#scroll-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0.88rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#scroll-container {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.wb-img {
+    width: auto;
+    height: 3rem;
+}
+
+.wb-enter {
+    display: -webkit-box;
+    display: -moz-box;
+    width: auto;
+    height: 0.94rem;
+    overflow: hidden;
+}
+
+.enter-btn {
+    position: relative;
+    display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    width:auto;
+    height:0.94rem;
+}
+
+.enter-pane {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: 0.94rem;
+    font-size: 0.26rem;
+    line-height: 0.94rem;
+    color: #333;
+}
+
+.enter-pane-left {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+    padding-left: 0.78rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.enter-pane-mid {
+    left: 50%;
+    padding-left: 0.58rem;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.enter-pane-right {
+    text-align: right;
+    right: 0.2rem;
+    padding-left: 0.58rem;
+    white-space: nowrap;
+}
+
+.enter-icon {
+    position: absolute;
+    top: 0.19rem;
+    left: 0;
+    display: block;
+    width: 0.56rem;
+    height: 0.56rem;
+}
+
+.icon-RMB {
+    background: url("../img/wb-i-01.png") center center no-repeat;
+    background-size: contain;
+}
+
+.icon-EX {
+    background: url("../img/wb-i-02.png") center center no-repeat;
+    background-size: contain;
+}
+
+.icon-WB {
+    background: url("../img/wb-i-03.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*大家都在兑*/
+.wb-ex {
+    position: relative;
+    width: auto;
+    height: 0.66rem;
+    background: #f4f4f4;
+    overflow: hidden;
+}
+
+.fire-label {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    top: 0;
+    display: block;
+    width: auto;
+    height: 0.66rem;
+    padding-left: 0.35rem;
+    font-size: 0.26rem;
+    line-height: 0.66rem;
+    color: #999;
+}
+
+.wb-ex-icon {
+    top: 0.165rem;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 0.27rem;
+    height: 0.33rem;
+    background: url("../img/fire.png") center center no-repeat;
+    background-size: contain;
+}
+
+/*兑换列表内容*/
+.wb-ex-list {
+    width: auto;
+    height: auto;
+    padding: 0 0.2rem;
+    overflow: hidden;
+}
+
+.wb-ex-items {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    width: auto;
+    height: 2.5rem;
+    padding: 0.34rem 0 0.28rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.items-img {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.items-pane {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+
+.items-title {
+    font-size: 0.34rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.items-label {
+    font-size: 0.28rem;
+    color: #999;
+}
+
+.items-info, a.getBtn {
+    position: absolute;
+    bottom: 0.28rem;
+    font-size: 0.28rem;
+    line-height: 0.48rem;
+}
+
+.items-info {
+    color: #ff9f2c;
+}
+
+.items-info em {
+    font-size: 0.4rem;
+}
+
+a.getBtn {
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.28rem;
+    display: block;
+    width: 1.48rem;
+    height: 0.48rem;
+    text-align: center;
+    color: #fff;
+    background: #fcc04d;
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+}
+
+a.getBtn > i {
+    font-size: 0.35rem;
+    line-height: 0.48rem;
+}
+
+/*微币商城详情*/
+.wb-detail-pane {
+    /*padding: 0 0.2rem;*/
+    width: auto;
+    height: auto;
+    margin-bottom: 0.2rem;
+    background: #fff;
+}
+
+.wb-detail-coupons {
+    padding: 0 0.2rem;
+    background: #fffefa;
+    width: auto;
+    height: 3.98rem;
+    overflow: hidden;
+}
+
+.detail-left {
+    width: 4.32rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.detail-left-label {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+.detail-left-label img {
+    width: 2.99rem;
+    text-align: right;
+}
+
+.detail-left-txt {
+    margin-top: 0.27rem;
+    font-size: 0.3rem;
+    color: #ff9f2c;
+    line-height: 1;
+}
+
+.detail-right {
+    width: 2.78rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.coupons-right {
+    display: block;
+    margin-top: 0.55rem;
+    width: 2.58rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.other-info {
+    padding: 0 0.2rem;
+    width: auto;
+    height: 1.32rem;
+    overflow: hidden;
+}
+
+.ex-info-left {
+    width: auto;
+    height: 1.32rem;
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+}
+
+.ex-info-left p:first-child{
+    margin-top:0.34rem;
+    margin-bottom: 0.2rem;
+}
+
+.ex-info-left .ex-price {
+    color: #ff9f2c;
+}
+
+.ex-info-left .ex-price > em {
+    font-size: 0.4rem;
+}
+
+.getBtn-right {
+    margin-top: 0.3rem;
+    display: block;
+    width: 1.9rem;
+    height: 0.68rem;
+    font-size: 0.28rem;
+    line-height: 0.68rem;
+    color: #fff;
+    background: #f2a81c;
+    -webkit-border-radius: 0.08rem;
+    -moz-border-radius: 0.08rem;
+    border-radius: 0.08rem;
+}
+
+/*微币商城详情*/
+.wb-detail-intro {
+    padding: 0 0.2rem;
+    width: auto;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+.wb-intro-label {
+    position: relative;
+    padding-left: 0.14rem;
+    width: auto;
+    height: 0.8rem;
+    font-size: 0.28rem;
+    color: #1a1a06;
+    line-height: 0.79rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.label-bg {
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    width: 0.1rem;
+    height: 0.4rem;
+    background: #ff9f2c;
+}
+
+.intro-content h4 {
+    font-size: 0.28rem;
+    line-height: 1.8;
+    color: #1a1a06;
+}
+
+.intro-content > p {
+    font-size: 0.28rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/*遮罩层*/
+.layer-pane {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5.62rem;
+    height: 2.4rem;
+    margin-top: -1.2rem;
+    margin-left: -2.81rem;
+    background: #fff;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
+
+.layer-pane > p {
+    font-size: 0.36rem;
+    line-height: 1.44rem;
+}
+
+.click-btn {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 2.81rem;
+    height: 0.94rem;
+}
+
+.clickBtn-ok, .clickBtn-cancle {
+    font-size: 0.28rem;
+    line-height: 0.94rem;
+}
+
+.clickBtn-cancle {
+    left: 0;
+    color: #888;
+    border-top: 1px solid #ddd;
+}
+
+.clickBtn-ok {
+    right: 0;
+    color: #fff;
+    background: #fda506;
+}
+
+/*兑换成功*/
+.ex-success {
+    display: none;
+}
+
+.ex-fail{
+    display: none;
+}
+
+.layer-ex-success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5.62rem;
+    height: 4.18rem;
+    margin-top: -2.09rem;
+    margin-left: -2.81rem;
+    background: #fff;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    width: 5.62rem;
+}
+
+.ex-success-icon {
+    display: block;
+    width: 1.58rem;
+    height: 1.58rem;
+    margin: 0.56rem auto 0.29rem;
+}
+
+.ex-txt {
+    font-size: 0.36rem;
+    line-height: 1;
+    color: #333;
+}
